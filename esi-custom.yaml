@@ -1,0 +1,33 @@
+parameter_defaults:
+  ContainerImagePrepare:
+  - set:
+      ceph_image: daemon
+      ceph_namespace: quay.io/ceph
+      ceph_tag: v6.0.7-stable-6.0-pacific-centos-stream8
+      name_prefix: openstack-
+      name_suffix: ''
+      namespace: quay.io/tripleowallaby
+      neutron_driver: ovn
+      tag: current-tripleo
+    tag_from_label: rdo_version
+  - push_destination: 192.168.24.1:8787
+    set:
+      namespace: quay.io/tripleowallaby
+    includes:
+    - neutron-server
+    modify_role: tripleo-modify-image
+    modify_append_tag: "-hotfix-wallaby"
+    modify_vars:
+      tasks_from: modify_image.yml
+      modify_dir_path: /home/stack/custom-dockerfiles/neutron-server
+  - push_destination: 192.168.24.1:8787
+    set:
+      namespace: quay.io/tripleowallaby
+    includes:
+    - ironic-conductor
+    modify_role: tripleo-modify-image
+    modify_append_tag: "-hotfix-wallaby"
+    modify_vars:
+      tasks_from: modify_image.yml
+      modify_dir_path: /home/stack/custom-dockerfiles/ironic-conductor
+  EnableCache: False

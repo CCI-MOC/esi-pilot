@@ -1,0 +1,39 @@
+{
+    "nodes": [
+        {   
+            "name": "oct4-01",
+            "pm_type": "ipmi",
+            "pm_user": "root",
+            "pm_password": "XXXXXXXXXXX",
+            "pm_addr": "10.2.4.1"
+        },
+	{   
+            "name": "oct4-02",
+            "pm_type": "ipmi",
+            "pm_user": "root",
+            "pm_password": "XXXXXXXXXXX",
+            "pm_addr": "10.2.4.2"
+        },
+	{ 
+            "name": "oct4-03",
+            "pm_type": "ipmi",
+            "pm_user": "root",
+            "pm_password": "XXXXXXXXXXX",
+            "pm_addr": "10.2.4.3"
+        },
+	{  
+	    "name": "oct4-04",
+            "pm_type": "ipmi",
+            "pm_user": "root",
+            "pm_password": "XXXXXXXXXXX",
+            "pm_addr": "10.2.4.4"
+        },
+	{ 
+            "name": "oct4-05",
+            "pm_type": "ipmi",
+            "pm_user": "root",
+            "pm_password": "XXXXXXXXXXX",
+            "pm_addr": "10.2.4.5"
+        }
+    ] 
+} 
