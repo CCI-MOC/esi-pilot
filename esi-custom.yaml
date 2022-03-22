@@ -1,4 +1,56 @@
+resource_registry:
+  OS::TripleO::Services::Redis: /usr/share/openstack-tripleo-heat-templates/deployment/database/redis-pacemaker-puppet.yaml
+  OS::TripleO::Services::IronicApi: /usr/share/openstack-tripleo-heat-templates/deployment/ironic/ironic-api-container-puppet.yaml
+  OS::TripleO::Services::IronicConductor: /usr/share/openstack-tripleo-heat-templates/deployment/ironic/ironic-conductor-container-puppet.yaml
+  OS::TripleO::Services::IronicPxe: /usr/share/openstack-tripleo-heat-templates/deployment/ironic/ironic-pxe-container-puppet.yaml
+  OS::TripleO::Services::IronicInspector: /usr/share/openstack-tripleo-heat-templates/deployment/ironic/ironic-inspector-container-puppet.yaml
+  OS::TripleO::Services::NovaIronic: /usr/share/openstack-tripleo-heat-templates/deployment/nova/nova-ironic-container-puppet.yaml
+  OS::TripleO::Services::IronicNeutronAgent: /usr/share/openstack-tripleo-heat-templates/deployment/ironic/ironic-neutron-agent-container-puppet.yaml
+  OS::TripleO::Services::NeutronDhcpAgent: /usr/share/openstack-tripleo-heat-templates/deployment/neutron/neutron-dhcp-container-puppet.yaml
+
 parameter_defaults:
+  # hardcode for oct4-05
+  NeutronPublicInterface: enp65s0f0np0
+  NeutronBridgeMappings: datacentre:br-ex
+  NeutronPhysicalBridge: br-ex
+  NeutronFlatNetworks: datacentre
+  NeutronMechanismDrivers: [openvswitch, baremetal]
+  NeutronNetworkVLANRanges: datacentre:621:630
+  NeutronTypeDrivers: [local, geneve, vlan, flat, vxlan]
+
+  ServiceNetMap:
+   IronicApiNetwork: oc_provisioning
+   IronicNetwork: oc_provisioning
+
+  #NovaLibvirtVolumeUseMultipath:  true
+  #NovaComputeOptVolumes:
+  #  - /etc/multipath.conf:/etc/multipath.conf:ro
+  #  - /etc/multipath/:/etc/multipath/:rw
+  CinderVolumeOptVolumes:
+    - /etc/multipath.conf:/etc/multipath.conf:ro
+    - /etc/multipath/:/etc/multipath/:rw
+
+  # configure neutron to always provide routes to the metadata
+  # service via dhcp
+  NeutronEnableForceMetadata: true
+
+  NeutronMechanismDrivers: ['openvswitch', 'baremetal']
+  DhcpAgentNotification: true
+  IronicEnabledHardwareTypes:
+  - ipmi
+  IronicEnabledPowerInterfaces:
+  - ipmitool
+  IronicEnabledManagementInterfaces:
+  - ipmitool
+  IronicEnabledInspectInterfaces:
+  - inspector
+  - no-inspect
+  IronicDefaultInspectInterface: inspector
+  IronicCleaningDiskErase: 'metadata'
+  IronicInspectorSubnets:
+  - ip_range: 192.168.24.200,192.168.24.250
+    gateway: 192.168.24.255
+
   ContainerImagePrepare:
   - set:
       ceph_image: daemon
@@ -19,7 +71,7 @@ parameter_defaults:
     modify_append_tag: "-hotfix-wallaby"
     modify_vars:
       tasks_from: modify_image.yml
-      modify_dir_path: /home/stack/custom-dockerfiles/neutron-server
+      modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/neutron-server
   - push_destination: 192.168.24.1:8787
     set:
       namespace: quay.io/tripleowallaby
@@ -29,5 +81,24 @@ parameter_defaults:
     modify_append_tag: "-hotfix-wallaby"
     modify_vars:
       tasks_from: modify_image.yml
-      modify_dir_path: /home/stack/custom-dockerfiles/ironic-conductor
-  EnableCache: False
+      modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/ironic-conductor
+  - push_destination: 192.168.24.1:8787
+    set:
+      namespace: quay.io/tripleowallaby
+    includes:
+    - cinder-volume
+    modify_role: tripleo-modify-image
+    modify_append_tag: "-hotfix-wallaby"
+    modify_vars:
+      tasks_from: modify_image.yml
+      modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/cinder-volume
+  - push_destination: 192.168.24.1:8787
+    set:
+      namespace: quay.io/tripleowallaby
+    includes:
+    - ironic-api
+    modify_role: tripleo-modify-image
+    modify_append_tag: "-hotfix-wallaby"
+    modify_vars:
+      tasks_from: modify_image.yml
+      modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/ironic-api

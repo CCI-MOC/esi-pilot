@@ -1,10 +1,11 @@
 - name: Controller
-  count: 3
+  count: 1
   defaults:
     networks:
     - network: ctlplane
       vif: true
     network_config:
       template: templates/net_config_bridge.j2
+      public_interface_name: enp65s0f0np0
       default_route_network:
       - ctlplane
