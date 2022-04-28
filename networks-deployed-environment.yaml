@@ -7,9 +7,9 @@ parameter_defaults:
           mtu: 1500
           name: external
           tags:
-          - tripleo_network_name=External
-          - tripleo_net_idx=1
           - tripleo_vip=true
+          - tripleo_net_idx=1
+          - tripleo_network_name=External
         subnets:
           external_subnet:
             cidr: 128.31.20.0/24
@@ -26,12 +26,12 @@ parameter_defaults:
           mtu: 1500
           name: internal_api
           tags:
-          - tripleo_network_name=InternalApi
-          - tripleo_net_idx=0
           - tripleo_vip=true
+          - tripleo_net_idx=0
+          - tripleo_network_name=InternalApi
         subnets:
           internal_api_subnet:
-            cidr: 172.17.0.0/24
+            cidr: 172.17.1.0/24
             dns_nameservers: []
             gateway_ip: null
             host_routes: []
@@ -39,13 +39,35 @@ parameter_defaults:
             name: internal_api_subnet
             tags:
             - tripleo_vlan_id=208
+      oc_provisioning:
+        network:
+          dns_domain: ocprovisioning.localdomain.
+          mtu: 1500
+          name: oc_provisioning
+          tags:
+          - tripleo_vip=true
+          - tripleo_net_idx=2
+          - tripleo_network_name=OcProvisioning
+        subnets:
+          provisioning_subnet:
+            cidr: 192.168.24.0/24
+            dns_nameservers: []
+            gateway_ip: 192.168.24.254
+            host_routes: []
+            ip_version: 4
+            name: provisioning_subnet
+            tags:
+            - tripleo_vlan_id=623
     net_cidr_map:
       external:
       - 128.31.20.0/24
       internal_api:
-      - 172.17.0.0/24
+      - 172.17.1.0/24
+      oc_provisioning:
+      - 192.168.24.0/24
     net_ip_version_map:
       external: 4
       internal_api: 4
+      oc_provisioning: 4
 resource_registry:
   OS::TripleO::Network: /usr/share/openstack-tripleo-heat-templates/network/deployed_networks.yaml
