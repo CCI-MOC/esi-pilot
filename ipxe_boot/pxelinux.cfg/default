@@ -1,4 +1,6 @@
 DEFAULT ipxe
 LABEL ipxe
   KERNEL ipxe.lkrn
-  APPEND dhcp && chain http://192.168.24.17:8088/boot.ipxe
+  APPEND dhcp && chain http://192.168.24.9:8088/boot.ipxe || dhcp && chain http://192.168.24.12:8088/boot.ipxe || dhcp && chain http://192.168.24.22:8088/boot.ipxe
+
+
