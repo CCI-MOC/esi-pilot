@@ -7,5 +7,6 @@ export OS_AUTH_TYPE=password
 export OS_AUTH_URL=http://129.10.5.144:5000
 export OS_IDENTITY_API_VERSION=3
 export OS_IMAGE_API_VERSION=2
+export OS_BAREMETAL_API_VERSION=1.69
 export OS_REGION_NAME=regionOne
 export PS1='[\u@\h \W(<project_name>)]$ '
