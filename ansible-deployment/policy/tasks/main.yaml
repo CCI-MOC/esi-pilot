@@ -1,0 +1,33 @@
+---
+- name: Configure Ironic/Neutron policy
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: Copy policy.json to Ironic directory
+       copy:
+         src: policy.json
+         dest: /var/lib/config-data/puppet-generated/ironic_api/etc/ironic
+         mode: 0644
+     - name: Change policy_file to policy.json
+       lineinfile:
+         backup: yes
+         path: /var/lib/config-data/puppet-generated/ironic_api/etc/ironic/ironic.conf
+         insertafter: ^# *policy_file *=.*
+         line: policy_file=/etc/ironic/policy.json
+     - name: Restart ironic api container
+       command: podman container restart ironic_api
+     - name: Restart ironic conductor container
+       command: podman container restart ironic_conductor
+     - name: Copy policy.yaml to Neutron directory
+       copy:
+         src: policy.yaml
+         dest: /var/lib/config-data/puppet-generated/neutron/etc/neutron
+         mode: 0644
+     - name: Change policy file to policy.yaml
+       lineinfile:
+         backup: yes
+         path: /var/lib/config-data/puppet-generated/neutron/etc/neutron/neutron.conf
+         insertafter: ^# *policy_file *=.*
+         line: policy_file=/etc/neutron/policy.yaml
+     - name: Restart Neutron API container
+       command: podman container restart neutron_api

@@ -1,0 +1,48 @@
+---
+- name: Custom dnsmasq configuration
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: Copy dnsmasq.conf
+       copy:
+         src: dnsmasq.conf
+         dest: /var/lib/config-data/puppet-generated/neutron/etc/neutron/
+         mode: 0644
+
+     - name: Edit dhcp_agent.ini
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/neutron/etc/neutron/dhcp_agent.ini
+         line: dnsmasq_config_file=/etc/neutron/dnsmasq.conf
+
+     - name: Install ipxe-bootimgs package
+       yum:
+         name: ipxe-bootimgs
+         state: present
+
+     - name: Copy ipxe boot images to /var/lib/neutron/dhcp
+       copy: src=/usr/share/ipxe/ dest=/var/lib/neutron/dhcp mode=0644 remote_src=yes
+
+     - name: Install syslinux package
+       yum:
+         name: syslinux
+         state: present
+
+     - name: Copy a bunch of boot files to /var/lib/neutron/dhcp
+       copy: src=/usr/share/syslinux/{{ item }} dest=/var/lib/neutron/dhcp remote_src=yes
+       with_items:
+         - chain.c32
+         - ldlinux.c32
+         - mboot.c32
+         - memdisk
+         - menu.c32
+         - pxechn.c32
+         - pxelinux.0
+
+     - name: Copy ipxe.lkrn to /var/lib/neutron/dhcp
+       copy: src=ipxe.lkrn dest=/var/lib/neutron/dhcp mode=0644
+
+     - name: Create pxelinux.cfg/default configuration file
+       copy: src=pxelinux.cfg dest=/var/lib/neutron/dhcp
+
+     - name: Restart neutron_dhcp container
+       command: podman container restart neutron_dhcp

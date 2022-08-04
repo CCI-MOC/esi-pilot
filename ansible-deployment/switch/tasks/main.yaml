@@ -1,0 +1,40 @@
+---
+- name: Configure ansible switch
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: Configure mechanism_drivers in ansible_conf.ini
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/neutron/etc/neutron/plugins/ml2/ml2_conf.ini
+         backup: yes
+         regexp: ^(mechanism_drivers).*
+         line: mechanism_drivers=ansible,openvswitch,baremetal
+     - name: Configure tenant_network_types in ansible_conf.ini
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/neutron/etc/neutron/plugins/ml2/ml2_conf.ini
+         regexp: ^(tenant_network_types).*
+         line: tenant_network_types=vlan
+     - name: Get masterauth value from redis.conf
+       command: awk '/^masterauth/ {print $2}' /var/lib/config-data/puppet-generated/redis/etc/redis.conf
+       register: masterauth_value
+     - name: Set [ml2_ansible] and [ansible:switch1] in ansible_conf.ini
+       blockinfile:
+         path: /var/lib/config-data/puppet-generated/neutron/etc/neutron/plugins/ml2/ml2_conf.ini
+         block: |
+          [ml2_ansible]
+          coordination_uri=redis://:{{ masterauth_value.stdout }}@{{ master_ip }}:6379/
+          [ansible:switch1]
+          ansible_connection=ansible.netcommon.network_cli
+          ansible_network_os=dellemc.os9.os9
+          ansible_host={{ ansible_switch_host }}
+          ansible_user=admin
+          ansible_ssh_pass={{ ansible_switch_ssh_password }}
+          ansible_become_password={{ ansible_switch_ssh_password }}
+          ansible_become=yes
+          ansible_become_method=enable
+          mac=4c:d9:8f:dc:e0:c9
+          manage_vlans=True
+          ansible_connection=local
+          stp_edge=True
+     - name: Restart neutron_api container
+       command: podman container restart neutron_api

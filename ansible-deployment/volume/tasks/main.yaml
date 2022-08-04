@@ -1,0 +1,40 @@
+---
+- name: Cinder volume configuration
+  # need to provide a host during runtime with "--limit <host>"
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: configure tripleo_ceph in cinder.conf
+       blockinfile:
+         path: /var/lib/config-data/puppet-generated/cinder/etc/cinder/cinder.conf
+         backup: yes
+         block: |
+          [tripleo_ceph]
+          backend_host=hostgroup
+          volume_backend_name=tripleo_ceph
+          volume_driver=cinder.volume.drivers.ceph.rbd_iscsi.RBDISCSIDriver
+          rbd_iscsi_api_debug=True
+          rbd_iscsi_api_user=admin
+          rbd_iscsi_api_password={{ rbd_iscsi_api_password }}
+          rbd_iscsi_api_url=http://10.21.3.1:5000
+          rbd_iscsi_target_iqn=iqn.2003-01.com.redhat.iscsi-gw:iscsi-igw
+          rbd_ceph_conf=/etc/ceph/ceph.conf
+          rbd_user=esi
+          rbd_pool=esi-volumes
+          rbd_flatten_volume_from_snapshot=False
+          rbd_secret_uuid={{ rbd_secret_uuid }}
+          report_discard_supported=True
+          use_multipath_for_image_xfer=True
+
+     - name: enable tripleo_ceph backend
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/cinder/etc/cinder/cinder.conf
+         insertafter: ^# *enabled_backends *=.*
+         line: enabled_backends=tripleo_ceph
+
+     - name: add multipath.conf to /etc
+       copy: src=multipath.conf dest=/etc mode=0644
+
+     - name: restart cinder volume container
+       command: podman container restart openstack-cinder-volume-podman-0
+
