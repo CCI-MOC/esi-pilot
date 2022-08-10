@@ -1,0 +1,77 @@
+---
+- name: Copy network scripts and bring up interfaces.
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: Copy network scripts
+       copy: src=ifcfg-eth1 dest=/etc/sysconfig/network-scripts/ifcfg-{{ eth1 }} mode=0644
+
+     - name: Configure public network
+       blockinfile:
+         path: /etc/sysconfig/network-scripts/ifcfg-{{ eth1 }}
+         block: |
+           IPADDR={{ public_ip }}
+           NAME={{ eth1 }}
+           DEVICE={{ eth1 }}
+
+     - name: Bring up public interface
+       command: ifup {{ eth1 }}
+
+     - name: Copy network scripts
+       copy: src=ifcfg-eth1.207 dest=/etc/sysconfig/network-scripts/ifcfg-{{ eth1 }}.207 mode=0644
+
+     - name: Configure switch network
+       blockinfile:
+         path: /etc/sysconfig/network-scripts/ifcfg-{{ eth1 }}.207
+         block: |
+           IPADDR={{ switch_ip }}
+           NAME={{ eth1 }}.207
+           DEVICE={{ eth1 }}.207
+
+     - name: Bring up switch interface
+       command: ifup {{ eth1 }}.207
+
+     - name: Copy network scripts
+       copy: src=ifcfg-ceph dest=/etc/sysconfig/network-scripts mode=0644
+
+     - name: Bring up ceph interface
+       command: ifup ceph
+
+     - name: Copy network scripts
+       copy: src=ifcfg-ipmi dest=/etc/sysconfig/network-scripts mode=0644
+
+     - name: Bring up ipmi interface
+       command: ifup ipmi
+
+     - name: Copy network scripts
+       copy: src=ifcfg-storage dest=/etc/sysconfig/network-scripts mode=0644
+
+     - name: Add ip address in ifcfg-storage
+       lineinfile:
+         path: /etc/sysconfig/network-scripts/ifcfg-storage
+         line: IPADDR={{ storage_ip }}
+
+     - name: Bring up storage interface
+       command: ifup storage
+
+     - name: Copy network scripts
+       copy: src=ifcfg-internal dest=/etc/sysconfig/network-scripts mode=0644
+
+     - name: Add ip address in ifcfg-internal
+       lineinfile:
+         path: /etc/sysconfig/network-scripts/ifcfg-internal
+         line: IPADDR={{ internal_ip }}
+
+     - name: Bring up internal interface
+       command: ifup internal
+
+     - name: Copy network scripts
+       copy: src=ifcfg-inspector dest=/etc/sysconfig/network-scripts mode=0644
+
+     - name: Add ip address in ifcfg-inspector
+       lineinfile:
+         path: /etc/sysconfig/network-scripts/ifcfg-inspector
+         line: IPADDR={{ inspector_ip }}
+
+     - name: Bring up inspector interface
+       command: ifup inspector

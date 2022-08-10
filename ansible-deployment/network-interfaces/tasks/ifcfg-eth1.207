@@ -1,0 +1,4 @@
+ONBOOT=yes
+VLAN=yes
+BOOTPROTO=none
+PREFIX=24
