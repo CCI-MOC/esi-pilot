@@ -18,6 +18,8 @@ parameter_defaults:
   NeutronNetworkVLANRanges: datacentre:621:630
   NeutronTypeDrivers: [local, geneve, vlan, flat, vxlan]
 
+  PublicVirtualFixedIPs: [{'ip_address':'129.10.5.144'}]
+
   ServiceNetMap:
    IronicApiNetwork: oc_provisioning
    IronicNetwork: oc_provisioning
