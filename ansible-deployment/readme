@@ -1,0 +1,9 @@
+after node provision:
+ansible-playbook -i inventory.yaml node_deploy/tasks/main.yaml
+after deployment:
+ansible-playbook -i inventory.yaml network-interfaces/tasks/main.yaml
+ansible-playbook -i inventory.yaml switch/tasks/main.yaml --extra-vars ansible_switch_ssh_password=<>
+ansible-playbook -i inventory.yaml dnsmasq/tasks/main.yaml
+ansible-playbook -i inventory.yaml policy/tasks/main.yaml
+ansible-playbook -i inventory.yaml ironic_config/tasks/main.yaml
+ansible-playbook -i inventory.yaml --extra-vars rbd_iscsi_api_password="xxx" --extra-vars rbd_secret_uuid="xxx" --limit <the controller with volume container running>

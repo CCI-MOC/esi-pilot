@@ -12,6 +12,7 @@
        lineinfile:
          backup: yes
          path: /var/lib/config-data/puppet-generated/ironic_api/etc/ironic/ironic.conf
+         search_string: policy_file=/etc/ironic/policy.yaml
          insertafter: ^# *policy_file *=.*
          line: policy_file=/etc/ironic/policy.json
      - name: Restart ironic api container

@@ -13,3 +13,5 @@ RUN sed -i 's/$stream/8-stream/g' /etc/yum.repos.d/CentOS-* && \
 
 WORKDIR /
 USER neutron
+
+RUN ansible-galaxy collection install dellemc.os9

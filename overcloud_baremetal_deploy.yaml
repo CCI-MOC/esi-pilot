@@ -1,11 +1,23 @@
 - name: Controller
-  count: 1
+  count: 3
+  instances:
+  - hostname: overcloud-controller-0
+    name: oct4-01
+    network_config:
+      public_interface_name: enp3s0f0np0
+  - hostname: overcloud-controller-1
+    name: oct4-04
+    network_config:
+      public_interface_name: enp65s0f0np0
+  - hostname: overcloud-controller-2
+    name: oct4-05
+    network_config:
+      public_interface_name: enp65s0f0np0
   defaults:
     networks:
     - network: ctlplane
       vif: true
     network_config:
       template: templates/net_config_bridge.j2
-      public_interface_name: enp65s0f0np0
       default_route_network:
       - ctlplane
