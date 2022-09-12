@@ -4,20 +4,6 @@
   become: yes
   tasks:
      - name: Copy network scripts
-       copy: src=ifcfg-eth1 dest=/etc/sysconfig/network-scripts/ifcfg-{{ eth1 }} mode=0644
-
-     - name: Configure public network
-       blockinfile:
-         path: /etc/sysconfig/network-scripts/ifcfg-{{ eth1 }}
-         block: |
-           IPADDR={{ public_ip }}
-           NAME={{ eth1 }}
-           DEVICE={{ eth1 }}
-
-     - name: Bring up public interface
-       command: ifup {{ eth1 }}
-
-     - name: Copy network scripts
        copy: src=ifcfg-eth1.207 dest=/etc/sysconfig/network-scripts/ifcfg-{{ eth1 }}.207 mode=0644
 
      - name: Configure switch network

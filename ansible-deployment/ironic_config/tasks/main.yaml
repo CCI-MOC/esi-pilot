@@ -19,6 +19,6 @@
        lineinfile:
          path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
          insertafter: ^# *socat_address *=.*
-         line: socat_address = {{ external_endpoint }}
+         line: socat_address = {{ vitual_control_ip }}
      - name: restart ironic container
        command: podman container restart ironic_conductor

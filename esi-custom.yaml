@@ -9,8 +9,6 @@ resource_registry:
   OS::TripleO::Services::NeutronDhcpAgent: /usr/share/openstack-tripleo-heat-templates/deployment/neutron/neutron-dhcp-container-puppet.yaml
 
 parameter_defaults:
-  # hardcode for oct4-05
-  NeutronPublicInterface: enp65s0f0np0
   NeutronBridgeMappings: datacentre:br-ex
   NeutronPhysicalBridge: br-ex
   NeutronFlatNetworks: datacentre
@@ -104,3 +102,4 @@ parameter_defaults:
     modify_vars:
       tasks_from: modify_image.yml
       modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/ironic-api
+  EnableCache: False

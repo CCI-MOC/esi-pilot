@@ -29,6 +29,7 @@
      - name: enable tripleo_ceph backend
        lineinfile:
          path: /var/lib/config-data/puppet-generated/cinder/etc/cinder/cinder.conf
+         search_string: enabled_backends=tripleo_iscsi
          insertafter: ^# *enabled_backends *=.*
          line: enabled_backends=tripleo_ceph
 
