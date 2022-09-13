@@ -4,7 +4,6 @@ if [[ $1 == "prepare" ]]; then
     RAMDISK=$(openstack image show centos-8-deploy-ramdisk  -f value -c id)
     KERNEL=$(openstack image show centos-8-deploy-kernel -f value -c id)
     mac_06=00:0f:53:53:a8:40
-    mac_07=00:0f:53:30:28:40
     mac_08=00:0f:53:30:7c:30
     mac_09=00:0f:53:53:8e:00
     mac_10=00:0f:53:57:83:71
@@ -15,7 +14,8 @@ if [[ $1 == "prepare" ]]; then
     mac_16=00:0f:53:53:aa:20
     mac_17=00:0f:53:2c:4b:90
 
-    for n in 06 07 08 09 10 12 13 14 15 16 17
+# note: we shouldn't enroll oct4-07 in ironic since it's been used by cloudlab
+    for n in 06 08 09 10 12 13 14 15 16 17
     do
         openstack baremetal node manage oct4-$n
         echo "managed oct4-$n"
@@ -29,13 +29,13 @@ if [[ $1 == "prepare" ]]; then
     done
 
 elif [[ $1 == "inspect" ]]; then
-    for n in 06 07 08 09 10 12 13 14 15 16 17
+    for n in 06 08 09 10 12 13 14 15 16 17
     do
         openstack baremetal node inspect oct4-$n
     done
 
 elif [[ $1 == "provide" ]]; then
-    for n in 06 07 08 09 10 12 13 14 15 16 17
+    for n in 06 08 09 10 12 13 14 15 16 17
     do
         openstack baremetal node provide oct4-$n
     done
