@@ -36,6 +36,11 @@
      - name: add multipath.conf to /etc
        copy: src=multipath.conf dest=/etc mode=0644
 
+     - name: copy ceph.conf to cinder volume container
+       command: podman cp ceph.conf openstack-cinder-volume-podman-0:/etc/ceph
+
+     - name: copy ceph.client.esi.keyring to cinder volume container
+       command: podman cp ceph.client.esi.keyring openstack-cinder-volume-podman-0:/etc/ceph
+
      - name: restart cinder volume container
        command: podman container restart openstack-cinder-volume-podman-0
-
