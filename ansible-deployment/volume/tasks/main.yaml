@@ -38,4 +38,3 @@
 
      - name: restart cinder volume container
        command: podman container restart openstack-cinder-volume-podman-0
-
