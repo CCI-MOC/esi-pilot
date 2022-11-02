@@ -1,0 +1,103 @@
+{
+    "nodes": [
+	 {
+            "name": "oct4-06",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.6",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+	{
+            "name": "oct4-08",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.8",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-09",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.9",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-10",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.10",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-11",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.11",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-12",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.12",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-13",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.13",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-14",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.14",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-15",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.15",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+	{
+            "name": "oct4-16",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.16",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        },
+        {
+            "name": "oct4-17",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.2.4.17",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx"
+            }
+        }
+    ]
+}
