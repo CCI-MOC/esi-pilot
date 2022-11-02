@@ -15,10 +15,10 @@
   mtu: 1500
   subnets:
     external_subnet:
-      ip_subnet: 128.31.20.0/24
+      ip_subnet: 128.31.20.0/22
       allocation_pools:
-        - start: 128.31.20.21
-          end: 128.31.20.250
+        - start: 128.31.20.31
+          end: 128.31.20.240
       gateway_ip: 128.31.20.1
       vlan: 3801
 # custom network for overcloud provisioning
