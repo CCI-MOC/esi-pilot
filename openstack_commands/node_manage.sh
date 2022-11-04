@@ -14,7 +14,19 @@ if [[ $1 == "prepare" ]]; then
     mac_16=00:0f:53:53:aa:20
     mac_17=00:0f:53:2c:4b:90
 
-# note: we shouldn't enroll oct4-07 in ironic since it's been used by cloudlab
+    # figure out free ipmi terminal port
+    tmp_file=`mktemp`
+    openstack baremetal node list  -c 'Driver Info' --long -f json > $tmp_file
+    max_bm_port=`jq '[. []."Driver Info" | select(.ipmi_terminal_port)] | max_by(.ipmi_terminal_port) | .ipmi_terminal_port' $tmp_file`
+    rm $tmp_file
+    if [ "$max_bm_port" == 'null' ]
+    then
+        free_port=8024
+    else
+        free_port=$((max_bm_port + 1))
+    fi
+
+    # note: we shouldn't enroll oct4-07 in ironic since it's been used by cloudlab
     for n in 06 08 09 10 12 13 14 15 16 17
     do
         openstack baremetal node manage oct4-$n
@@ -26,6 +38,8 @@ if [[ $1 == "prepare" ]]; then
         openstack baremetal port create --node $uuid ${!mac}  --local-link-connection switch_info=switch1 --local-link-connection switch_id=4c:d9:8f:dc:e0:c9 --local-link-connection port_id=Te1/$port --physical-network datacentre
         openstack baremetal node set  --property capabilities=iscsi_boot:True oct4-$n
         openstack baremetal node set --instance-info storage_interface=cinder oct4-$n
+        openstack baremetal node set --driver-info ipmi_terminal_port=$free_port oct4-$n
+        free_port=$((free_port + 1))
     done
 
 elif [[ $1 == "inspect" ]]; then
