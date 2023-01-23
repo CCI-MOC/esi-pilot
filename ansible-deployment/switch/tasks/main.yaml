@@ -36,5 +36,16 @@
           manage_vlans=True
           ansible_connection=local
           stp_edge=True
+          [ansible:brocade-15-42]
+          ansible_connection=ansible.netcommon.network_cli
+          ansible_network_os=nos
+          ansible_host=10.0.15.42
+          ansible_user=admin
+          ansible_ssh_pass={{ ansible_brocade_ssh_password }}
+          ansible_become=no
+          mac=50:eb:1a:61:5d:6a
+          manage_vlans=True
+          ansible_connection=local
+          stp_edge=True
      - name: Restart neutron_api container
        command: podman container restart neutron_api
