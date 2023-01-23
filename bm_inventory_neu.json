@@ -1,0 +1,13 @@
+{
+    "nodes": [
+	 {
+            "name": "neu-17-35",
+            "driver": "ipmi",
+            "driver_info": {
+                "ipmi_address": "10.0.17.35",
+                "ipmi_username": "mocadmin",
+                "ipmi_password": "xxxxxxxx"
+            }
+    }
+    ]
+}
