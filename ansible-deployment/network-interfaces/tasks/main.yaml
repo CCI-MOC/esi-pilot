@@ -61,3 +61,6 @@
 
      - name: Bring up inspector interface
        command: ifup inspector
+
+     - name: Add route for MOC IPMI network
+       copy: src=route-enp65s0f1np1 dest=/etc/sysconfig/network-scripts mode=0644
