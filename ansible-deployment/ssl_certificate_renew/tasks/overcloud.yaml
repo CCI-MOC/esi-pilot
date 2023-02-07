@@ -1,0 +1,22 @@
+---
+- name: Update ssl certificate on overcloud
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: copy full chain to overcloud nodes
+       copy:
+         src: /home/stack/.acme.sh/esi.massopen.cloud/fullchain.cer
+         dest: /etc/pki/tls/private/overcloud_endpoint.pem
+         force: yes
+
+     - name: append private key to overcloud_endpoint.pem
+       lineinfile:
+         path: /etc/pki/tls/private/overcloud_endpoint.pem
+         line: "{{ lookup('file', '/home/stack/.acme.sh/esi.massopen.cloud/esi.massopen.cloud.key') }}"
+         state: present
+         create: yes
+
+     - name: restart haproxy containers
+       shell:
+           cmd: |
+               podman restart $(podman ps --filter name=haproxy --filter status=running | awk 'NR > 1 {print $NF}')

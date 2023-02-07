@@ -1,0 +1,9 @@
+---
+- name: Generate ssl certificate on undercloud
+  hosts: localhost
+  tasks:
+     - name: export aws credentials and use acme to generate certificate
+       shell: |
+         export AWS_ACCESS_KEY_ID={{ AWS_ACCESS_KEY_ID }}
+         export AWS_SECRET_ACCESS_KEY={{ AWS_SECRET_ACCESS_KEY }}
+         /home/stack/.acme.sh/acme.sh --issue --dns dns_aws -d esi.massopen.cloud --challenge-alias esi.acme.massopen.cloud --force

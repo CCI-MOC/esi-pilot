@@ -1,0 +1,5 @@
+---
+
+- import_playbook: undercloud.yaml
+
+- import_playbook: overcloud.yaml
