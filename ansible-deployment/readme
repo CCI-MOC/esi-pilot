@@ -7,3 +7,5 @@ ansible-playbook -i inventory.yaml dnsmasq/tasks/main.yaml
 ansible-playbook -i inventory.yaml policy/tasks/main.yaml
 ansible-playbook -i inventory.yaml ironic_config/tasks/main.yaml
 ansible-playbook -i inventory.yaml --extra-vars rbd_iscsi_api_password="xxx" --extra-vars rbd_secret_uuid="xxx" --limit <the controller with volume container running>
+renew ssl certificate:
+ansible-playbook -i inventory.yaml ssl_certificate_renew/tasks/main.yaml --extra-vars AWS_ACCESS_KEY_ID="xxx" --extra-vars AWS_SECRET_ACCESS_KEY="xxx"
