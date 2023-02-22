@@ -1,0 +1,35 @@
+[ml2_ansible]
+coordination_uri=redis://:{{ masterauth_value.stdout }}@{{ master_ip }}:6379/
+[ansible:switch1]
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=dellemc.os9.os9
+ansible_host={{ ansible_switch_host }}
+ansible_user=admin
+ansible_ssh_pass={{ ansible_switch_ssh_password }}
+ansible_become_password={{ ansible_switch_ssh_password }}
+ansible_become=yes
+ansible_become_method=enable
+mac=4c:d9:8f:dc:e0:c9
+manage_vlans=True
+ansible_connection=local
+stp_edge=True
+[ansible:brocade-15-42]
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=nos
+ansible_host=10.0.15.42
+ansible_user=admin
+ansible_ssh_pass={{ ansible_brocade_ssh_password }}
+ansible_become=no
+mac=50:eb:1a:61:5d:6a
+manage_vlans=True
+ansible_connection=local
+stp_edge=True
+[ansible:cisco-23-40]
+ansible_network_os=nxos
+ansible_host=10.2.23.40
+ansible_user=admin
+ansible_ssh_pass={{ ansible_cisco_23_40_password }}
+mac=e4:c7:22:c0:0b:bc
+manage_vlans=True
+ansible_connection=local
+stp_edge=True
