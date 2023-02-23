@@ -8,19 +8,14 @@
       allocation_pools:
         - start: 172.17.1.4
           end: 172.17.1.250
-      vlan: 208
 - name: External
   name_lower: external
   vip: true
   mtu: 1500
   subnets:
     external_subnet:
-      ip_subnet: 128.31.20.0/22
-      allocation_pools:
-        - start: 128.31.20.31
-          end: 128.31.20.240
-      gateway_ip: 128.31.20.1
-      vlan: 3801
+      ip_subnet: 129.10.5.0/24
+      gateway_ip: 129.10.5.1
 # custom network for overcloud provisioning
 - name: OcProvisioning
   name_lower: oc_provisioning
@@ -32,4 +27,3 @@
         - start: 192.168.24.130
           end: 192.168.24.149
       gateway_ip: 192.168.24.254
-      vlan: 623
