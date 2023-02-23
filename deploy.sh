@@ -11,7 +11,6 @@ openstack overcloud deploy --stack overcloud \
 		-e containers-prepare-parameter.yaml \
 		-e /usr/share/openstack-tripleo-heat-templates/environments/memcached-use-ips.yaml \
 		-e /usr/share/openstack-tripleo-heat-templates/environments/services/neutron-ml2-ansible.yaml \
-		-e ml2-ansible-hosts.yaml \
 		-e /usr/share/openstack-tripleo-heat-templates/environments/services/neutron-ovs.yaml \
 		-e enable-tls.yaml \
 		-e tls-endpoints-public-dns.yaml \
