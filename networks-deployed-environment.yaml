@@ -12,7 +12,7 @@ parameter_defaults:
           - tripleo_network_name=External
         subnets:
           external_subnet:
-            cidr: 128.31.20.0/24
+            cidr: 128.31.20.0/22
             dns_nameservers: []
             gateway_ip: 128.31.20.1
             host_routes: []
@@ -60,7 +60,7 @@ parameter_defaults:
             - tripleo_vlan_id=623
     net_cidr_map:
       external:
-      - 128.31.20.0/24
+      - 128.31.20.0/22
       internal_api:
       - 172.17.1.0/24
       oc_provisioning:
