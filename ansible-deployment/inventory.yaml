@@ -30,5 +30,5 @@ overcloud_controllers:
   vars:
     ansible_user: heat-admin
     external_endpoint: 129.10.5.144
-    master_ip: 192.168.24.23
+    master_ip: 192.168.24.16
     ansible_switch_host: 10.1.0.14

@@ -36,6 +36,9 @@ parameter_defaults:
 
   NeutronMechanismDrivers: ['openvswitch', 'baremetal']
   DhcpAgentNotification: true
+  IronicEnabledDeployInterfaces:
+  - direct
+  - ramdisk
   IronicEnabledHardwareTypes:
   - ipmi
   IronicEnabledPowerInterfaces:
@@ -69,7 +72,7 @@ parameter_defaults:
     includes:
     - neutron-server
     modify_role: tripleo-modify-image
-    modify_append_tag: "-hotfix-wallaby"
+    modify_append_tag: "-hotfix-wallaby-2023-02-28"
     modify_vars:
       tasks_from: modify_image.yml
       modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/neutron-server
