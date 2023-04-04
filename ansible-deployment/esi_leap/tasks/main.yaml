@@ -1,0 +1,8 @@
+---
+- name: Open 7777 port on the controller with esi-leap running
+  hosts: overcloud_controllers
+  become: yes
+  tasks:
+     - name: Open port 7777 in the firewall
+       command: iptables -I INPUT -p tcp --dport 7777 -j ACCEPT
+       when: ansible_ssh_host == esi_leap_controller_ip
