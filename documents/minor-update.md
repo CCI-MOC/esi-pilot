@@ -41,20 +41,11 @@ the controller:
  ansible-playbook -i inventory.yaml switch/tasks/main.yaml --limit controller0 --extra-vars ansible_switch_ssh_password=<> --extra-vars ansible_brocade_ssh_password=<> --extra-vars ansible_cisco_23_40_password=<>
  ansible-playbook -i inventory.yaml dnsmasq/tasks/main.yaml --limit controller0
  ansible-playbook -i inventory.yaml policy/tasks/main.yaml --limit controller0
- ansible-playbook -i inventory.yaml ironic_config/tasks/main.yaml --limit controller0 
+ ansible-playbook -i inventory.yaml ironic_config/tasks/main.yaml --limit controller0
  ansible-playbook -i inventory.yaml ssl_certificate_renew/tasks/overcloud.yaml --limit controller0
+ ansible-playbook -i inventory.yaml volume/tasks/main.yaml --limit controller0 --extra-vars rbd_iscsi_api_password=<> --extra-vars rbd_secret_uuid=<>
+ ansible-playbook -i inventory.yaml esi_leap/tasks/main.yaml --limit controller0
 ```
-
-If the controller hosts the Cinder volume service, run the volume playbook as well:
-
-```
-ansible-playbook -i inventory.yaml volume/tasks/main.yaml --extra-vars rbd_iscsi_api_password=<> --extra-vars rbd_secret_uuid=<> --limit controller0
-```
-
-There are additional steps to run afterwards:
-
-* `cinder.conf` should be updated on the controllers that do *not* host the Cinder volume service.
-* The controller running `esi-leap` should open port 7777.
 
 Once the inital controller is updated, the other controllers can be updated in turn.
 
