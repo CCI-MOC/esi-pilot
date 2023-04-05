@@ -1,0 +1,29 @@
+# Parameters for single-signon.yaml and enable-federation-openidc.yaml
+parameter_defaults:
+  KeystoneTrustedDashboards: https://esi.massopen.cloud/
+  # The name associated with the IdP in Keystone.
+  KeystoneOpenIdcIdpName: moc
+  # Copy the ProviderMetadataUrl from moc openstack.
+  KeystoneOpenIdcProviderMetadataUrl: https://sso.massopen.cloud/auth/realms/moc/.well-known/openid-configuration
+  # We have requested our openidc client: esi
+  KeystoneOpenIdcClientId: esi
+  # Copy KeystoneIdentityProviders parameters from moc openstack
+  KeystoneIdentityProviders:
+    moc:
+      remote_id: https://sso.massopen.cloud/auth/realms/moc
+      rules:
+        - local:
+            - user: {name: '{0}'}
+          remote:
+            - {type: OIDC-preferred_username}
+      protocol: openid
+  # The client secret to use when handshaking with your OpenID Connect provider.
+  # the secret is store on undercloud node
+  KeystoneOpenIdcClientSecret: <myclientsecret>
+  # Passphrase to use when encrypting data for OpenID Connect handshake.
+  # Default value from heat-template
+  KeystoneOpenIdcCryptoPassphrase: <secrect>
+  # OAuth 2.0 introspection endpoint for mod_auth_openidc. Maybe we can use the same url as MOC openstack?
+  KeystoneOpenIdcIntrospectionEndpoint: https://sso.massopen.cloud/auth/realms/moc/protocol/openid-connect/token/introspect
+  # Specifies a mapping from SSO authentication choice to identity provider and protocol. The identity provider and protocol names must match the resources defined in keystone.
+  WebSSOIDPMapping: {'OIDC': ['moc', 'openid']}
