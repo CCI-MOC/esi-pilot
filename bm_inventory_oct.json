@@ -1,6 +1,60 @@
 {
     "nodes": [
-	 {
+        {
+            "name": "oct4-02",
+            "driver": "ipmi",
+            "resource_class": "baremetal",
+            "properties": {
+                "capabilities": "iscsi_boot:True"
+            },
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_address": "10.2.4.2",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_terminal_port": "8021"
+            },
+            "ports": [
+                {
+                  "address": "00:0f:53:24:45:60",
+                  "physical_network": "datacentre",
+                  "local_link_connection": {
+                    "switch_info": "switch1",
+                    "port_id": "Te1/16",
+                    "switch_id": "4c:d9:8f:dc:e0:c9"
+                  }
+                }
+            ]
+        },
+        {
+            "name": "oct4-03",
+            "driver": "ipmi",
+            "resource_class": "baremetal",
+            "properties": {
+                "capabilities": "iscsi_boot:True"
+            },
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_address": "10.2.4.3",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_terminal_port": "8022"
+            },
+            "ports": [
+                {
+                  "address": "00:0f:53:30:35:00",
+                  "physical_network": "datacentre",
+                  "local_link_connection": {
+                    "switch_info": "switch1",
+                    "port_id": "Te1/15",
+                    "switch_id": "4c:d9:8f:dc:e0:c9"
+                  }
+                }
+            ]
+        },
+	{
             "name": "oct4-06",
             "driver": "ipmi",
             "resource_class": "baremetal",
@@ -54,7 +108,6 @@
                 }
             ]
         },
-
         {
             "name": "oct4-09",
             "driver": "ipmi",
