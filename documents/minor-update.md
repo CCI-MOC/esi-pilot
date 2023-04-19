@@ -56,3 +56,5 @@ After all the updates are run, `ml2_conf.ini` may need to be updated on each con
 ```
  ansible-playbook -i inventory.yaml switch/tasks/main.yaml --extra-vars ansible_switch_ssh_password=<> --extra-vars ansible_brocade_ssh_password=<> --extra-vars ansible_cisco_23_40_password=<>
 ```
+
+After a minor update, the neutron agents may become unavailable. To verify the status of the agents, run the command ``openstack network agent list | grep XXX``. If the output indicates that the agents are down, restart the corresponding containers on the relevant controller to bring them back online.
