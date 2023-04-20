@@ -5,26 +5,18 @@ WORKDIR /tmp
 
 RUN sed -i 's/$stream/8-stream/g' /etc/yum.repos.d/CentOS-* && \
         yum -y install git && \
-	git clone https://github.com/ansible-network/network-runner && \
+	git clone https://github.com/CCI-MOC/network-runner && \
 	cd network-runner && \
-        git checkout 0.3.6 && \
-	python3 setup.py install && \
+        git checkout esi_network_runner && \
+	\cp -r etc/ansible/roles/network-runner/providers/nos /etc/ansible/roles/network-runner/providers/. && \
 	yum clean all
 
 RUN cd /tmp && \
-        mkdir naved && \
-        cd naved && \
-        git clone https://github.com/naved001/network-runner && \
-        cd network-runner && \
-        git checkout vdx-nos/improve-performance && \
-        \cp -r etc/ansible/roles/network-runner/providers/nos /etc/ansible/roles/network-runner/providers/.
-
-RUN cd /tmp && \
-        mkdir tzumainn && \
-        cd tzumainn && \
-        git clone https://opendev.org/x/networking-ansible && \
+        mkdir esi && \
+        cd esi && \
+        git clone https://github.com/CCI-MOC/networking-ansible && \
         cd networking-ansible && \
-        git pull https://review.opendev.org/x/networking-ansible refs/changes/38/872138/1 && \
+        git checkout esi_networking_ansible && \
         \cp /usr/lib/python3.6/site-packages/networking_ansible/ml2/mech_driver.py /usr/lib/python3.6/site-packages/networking_ansible/ml2/mech_driver.py.bak && \
         \cp networking_ansible/ml2/mech_driver.py /usr/lib/python3.6/site-packages/networking_ansible/ml2/mech_driver.py
 
