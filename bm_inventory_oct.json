@@ -337,7 +337,8 @@
 	{
             "name": "oct4-cha3-1a",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -364,7 +365,8 @@
         {
             "name": "oct4-cha3-1b",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -391,7 +393,8 @@
         {
             "name": "oct4-cha3-1c",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -418,7 +421,8 @@
         {
             "name": "oct4-cha3-1d",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -445,7 +449,8 @@
         {
             "name": "oct4-cha3-3a",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -472,7 +477,8 @@
         {
             "name": "oct4-cha3-3b",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -499,7 +505,8 @@
         {
             "name": "oct4-cha3-3c",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -526,7 +533,8 @@
         {
             "name": "oct4-cha3-3d",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -553,7 +561,8 @@
 	{
             "name": "oct4-cha4-1a",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -580,7 +589,8 @@
         {
             "name": "oct4-cha4-1b",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -607,7 +617,8 @@
         {
             "name": "oct4-cha4-1c",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -634,7 +645,8 @@
         {
             "name": "oct4-cha4-1d",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -661,7 +673,8 @@
         {
             "name": "oct4-cha4-3a",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -688,7 +701,8 @@
         {
             "name": "oct4-cha4-3b",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -715,7 +729,8 @@
         {
             "name": "oct4-cha4-3c",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
@@ -742,7 +757,8 @@
         {
             "name": "oct4-cha4-3d",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+		"root_device":  {"size": ">= 50"}
             },
             "resource_class": "baremetal",
             "driver": "ipmi",
