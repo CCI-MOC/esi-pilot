@@ -13,7 +13,7 @@ parameter_defaults:
   NeutronPhysicalBridge: br-ex
   NeutronFlatNetworks: datacentre
   NeutronMechanismDrivers: [openvswitch, baremetal]
-  NeutronNetworkVLANRanges: datacentre:621:630
+  NeutronNetworkVLANRanges: datacentre:351:499,datacentre:520:622,datacentre:624:630
   NeutronTypeDrivers: [local, geneve, vlan, flat, vxlan]
 
   PublicVirtualFixedIPs: [{'ip_address':'129.10.5.144'}]
