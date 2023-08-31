@@ -1,7 +1,7 @@
 {
     "nodes": [
       {
-        "name": "MOC-R4PAC21U37-S1A-OBM",
+        "name": "MOC-R4PAC21U37-S1A",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -37,7 +37,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S1B-OBM",
+        "name": "MOC-R4PAC21U37-S1B",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S1C-OBM",
+        "name": "MOC-R4PAC21U37-S1C",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -109,7 +109,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S1D-OBM",
+        "name": "MOC-R4PAC21U37-S1D",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -145,7 +145,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S3A-OBM",
+        "name": "MOC-R4PAC21U37-S3A",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -181,7 +181,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S3B-OBM",
+        "name": "MOC-R4PAC21U37-S3B",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -217,7 +217,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S3C-OBM",
+        "name": "MOC-R4PAC21U37-S3C",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -253,7 +253,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U37-S3D-OBM",
+        "name": "MOC-R4PAC21U37-S3D",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -289,7 +289,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S1A-OBM",
+        "name": "MOC-R4PAC21U35-S1A",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -325,7 +325,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S1B-OBM",
+        "name": "MOC-R4PAC21U35-S1B",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -361,7 +361,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S1C-OBM",
+        "name": "MOC-R4PAC21U35-S1C",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -397,7 +397,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S1D-OBM",
+        "name": "MOC-R4PAC21U35-S1D",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -433,7 +433,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S3A-OBM",
+        "name": "MOC-R4PAC21U35-S3A",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -469,7 +469,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S3B-OBM",
+        "name": "MOC-R4PAC21U35-S3B",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -505,7 +505,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S3C-OBM",
+        "name": "MOC-R4PAC21U35-S3C",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -541,7 +541,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U35-S3D-OBM",
+        "name": "MOC-R4PAC21U35-S3D",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -577,7 +577,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S1A-OBM",
+        "name": "MOC-R4PAC21U31-S1A",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -613,7 +613,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S1B-OBM",
+        "name": "MOC-R4PAC21U31-S1B",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -649,7 +649,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S1C-OBM",
+        "name": "MOC-R4PAC21U31-S1C",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -685,7 +685,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S3A-OBM",
+        "name": "MOC-R4PAC21U31-S3A",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -721,7 +721,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S3B-OBM",
+        "name": "MOC-R4PAC21U31-S3B",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -757,7 +757,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S3C-OBM",
+        "name": "MOC-R4PAC21U31-S3C",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -793,7 +793,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U31-S3D-OBM",
+        "name": "MOC-R4PAC21U31-S3D",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -829,7 +829,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U29-S3-OBM",
+        "name": "MOC-R4PAC21U29-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -865,7 +865,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U27-S3-OBM",
+        "name": "MOC-R4PAC21U27-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -901,7 +901,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U25-S1-OBM",
+        "name": "MOC-R4PAC21U25-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -937,7 +937,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U23-S3-OBM",
+        "name": "MOC-R4PAC21U23-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -973,7 +973,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U21-S1-OBM",
+        "name": "MOC-R4PAC21U21-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1009,7 +1009,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U21-S3-OBM",
+        "name": "MOC-R4PAC21U21-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1045,7 +1045,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U17-S1-OBM",
+        "name": "MOC-R4PAC21U17-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1081,7 +1081,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U17-S3-OBM",
+        "name": "MOC-R4PAC21U17-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1117,7 +1117,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U15-S1-OBM",
+        "name": "MOC-R4PAC21U15-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1153,7 +1153,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U15-S3-OBM",
+        "name": "MOC-R4PAC21U15-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1189,7 +1189,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U13-S3-OBM",
+        "name": "MOC-R4PAC21U13-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1225,7 +1225,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U11-S1-OBM",
+        "name": "MOC-R4PAC21U11-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1261,7 +1261,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U11-S3-OBM",
+        "name": "MOC-R4PAC21U11-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1297,7 +1297,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U09-S1-OBM",
+        "name": "MOC-R4PAC21U09-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1333,7 +1333,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U09-S3-OBM",
+        "name": "MOC-R4PAC21U09-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1369,7 +1369,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U03-S1-OBM",
+        "name": "MOC-R4PAC21U03-S1",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
@@ -1405,7 +1405,7 @@
         ]
       },
       {
-        "name": "MOC-R4PAC21U03-S3-OBM",
+        "name": "MOC-R4PAC21U03-S3",
         "properties": {
           "capabilities": "iscsi_boot:True"
         },
