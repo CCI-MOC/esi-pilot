@@ -1,0 +1,196 @@
+From 9c9c087dd8507b5f714f7453d58bb5e6ceca8ca3 Mon Sep 17 00:00:00 2001
+From: Tzu-Mainn Chen <tzumainn@redhat.com>
+Date: Mon, 8 Nov 2021 20:30:52 +0000
+Subject: [PATCH 1/1] Create node get_interface method
+
+A node's interface can be temporarily overriden in instance_info.
+However, some parts of the Ironic code still used a node's interface
+attribute directly. This change adds a node get_interface method
+and updates various parts of the Ironic code to use it.
+
+Change-Id: Ifdaa21383f71b501bccb6cf8fe80e5b34661b6ae
+
+# Conflicts:
+#	ironic/drivers/modules/ramdisk.py
+#	ironic/drivers/modules/redfish/boot.py
+#	ironic/drivers/modules/redfish/raid.py
+---
+ ironic/common/driver_factory.py                       |  4 +---
+ ironic/common/neutron.py                              |  2 +-
+ ironic/drivers/modules/boot_mode_utils.py             |  4 ++--
+ ironic/drivers/modules/deploy_utils.py                |  4 ++--
+ ironic/drivers/modules/inspector.py                   |  4 ++--
+ ironic/drivers/modules/ramdisk.py                     |  0
+ ironic/drivers/modules/redfish/boot.py                |  2 +-
+ ironic/objects/node.py                                |  6 ++++++
+ ironic/tests/unit/objects/test_node.py                | 11 +++++++++++
+ ...-info-interface-override-fix-043df41199529892.yaml |  7 +++++++
+ 10 files changed, 33 insertions(+), 11 deletions(-)
+ create mode 100644 ironic/drivers/modules/ramdisk.py
+ create mode 100644 releasenotes/notes/instance-info-interface-override-fix-043df41199529892.yaml
+
+diff --git a/ironic/common/driver_factory.py b/ironic/common/driver_factory.py
+index 298a4962d..d989f075e 100644
+--- a/ironic/common/driver_factory.py
++++ b/ironic/common/driver_factory.py
+@@ -69,9 +69,7 @@ def _attach_interfaces_to_driver(bare_driver, node, hw_type):
+              the requested implementation is not compatible with it.
+     """
+     for iface in _INTERFACE_LOADERS:
+-        iface_name = '%s_interface' % iface
+-        impl_name = node.instance_info.get(iface_name,
+-                                           getattr(node, iface_name))
++        impl_name = node.get_interface(iface)
+         impl = get_interface(hw_type, iface, impl_name)
+         setattr(bare_driver, iface, impl)
+ 
+diff --git a/ironic/common/neutron.py b/ironic/common/neutron.py
+index a0f24d1d0..df5b5bd7a 100644
+--- a/ironic/common/neutron.py
++++ b/ironic/common/neutron.py
+@@ -713,7 +713,7 @@ def validate_port_info(node, port):
+     # Subnet Manager.
+     if port.extra.get('client-id'):
+         return True
+-    if (node.network_interface == 'neutron'
++    if (node.get_interface('network') == 'neutron'
+             and not port.local_link_connection):
+         LOG.warning("The local_link_connection is required for "
+                     "'neutron' network interface and is not present "
+diff --git a/ironic/drivers/modules/boot_mode_utils.py b/ironic/drivers/modules/boot_mode_utils.py
+index 9ddf64849..14e2ad116 100644
+--- a/ironic/drivers/modules/boot_mode_utils.py
++++ b/ironic/drivers/modules/boot_mode_utils.py
+@@ -322,7 +322,7 @@ def configure_secure_boot_if_needed(task):
+                     'management interface %(driver)s does not support it. '
+                     'This warning will become an error in a future release.',
+                     {'node': task.node.uuid,
+-                     'driver': task.node.management_interface})
++                     'driver': task.node.get_interface('management')})
+     except Exception as exc:
+         with excutils.save_and_reraise_exception():
+             LOG.error('Failed to configure secure boot for node %(node)s: '
+@@ -347,7 +347,7 @@ def deconfigure_secure_boot_if_needed(task):
+         LOG.debug('Secure boot was requested for node %(node)s but its '
+                   'management interface %(driver)s does not support it.',
+                   {'node': task.node.uuid,
+-                   'driver': task.node.management_interface})
++                   'driver': task.node.get_interface('management')})
+     except Exception as exc:
+         with excutils.save_and_reraise_exception():
+             LOG.error('Failed to deconfigure secure boot for node %(node)s: '
+diff --git a/ironic/drivers/modules/deploy_utils.py b/ironic/drivers/modules/deploy_utils.py
+index 9902f4466..b7f76b606 100644
+--- a/ironic/drivers/modules/deploy_utils.py
++++ b/ironic/drivers/modules/deploy_utils.py
+@@ -600,7 +600,7 @@ def get_boot_option(node):
+ # option it supports.
+ 
+ def is_ramdisk_deploy(node):
+-    return node.deploy_interface == 'ramdisk'
++    return node.get_interface('deploy') == 'ramdisk'
+ 
+ 
+ def is_anaconda_deploy(node):
+@@ -610,7 +610,7 @@ def is_anaconda_deploy(node):
+     :returns: A boolean value of True when Anaconda deploy interface is in use
+               otherwise False
+     """
+-    if node.deploy_interface == 'anaconda':
++    if node.get_interface('deploy') == 'anaconda':
+         return True
+     return False
+ 
+diff --git a/ironic/drivers/modules/inspector.py b/ironic/drivers/modules/inspector.py
+index b344abb74..64404f67f 100644
+--- a/ironic/drivers/modules/inspector.py
++++ b/ironic/drivers/modules/inspector.py
+@@ -153,7 +153,7 @@ def _ironic_manages_boot(task, raise_exc=False):
+                   'not support managed boot for in-band inspection or '
+                   'the required options are not populated: %(exc)s',
+                   {'node': task.node.uuid,
+-                   'iface': task.node.boot_interface,
++                   'iface': task.node.get_interface('boot'),
+                    'exc': e})
+         if raise_exc:
+             raise
+@@ -166,7 +166,7 @@ def _ironic_manages_boot(task, raise_exc=False):
+                   'not support managed boot for in-band inspection or '
+                   'the required options are not populated: %(exc)s',
+                   {'node': task.node.uuid,
+-                   'iface': task.node.network_interface,
++                   'iface': task.node.get_interface('network'),
+                    'exc': e})
+         if raise_exc:
+             raise
+diff --git a/ironic/drivers/modules/ramdisk.py b/ironic/drivers/modules/ramdisk.py
+new file mode 100644
+index 000000000..e69de29bb
+diff --git a/ironic/drivers/modules/redfish/boot.py b/ironic/drivers/modules/redfish/boot.py
+index 59813a6d0..d3993e91a 100644
+--- a/ironic/drivers/modules/redfish/boot.py
++++ b/ironic/drivers/modules/redfish/boot.py
+@@ -450,7 +450,7 @@ class RedfishVirtualMediaBoot(base.BootInterface):
+                   "%(node)s with vendor %(vendor)s and BMC version %(fwv)s, "
+                   "upgrade to 6.00.00.00 or newer or use "
+                   "idrac-redfish-virtual-media instead")
+-                % {'iface': task.node.boot_interface,
++                % {'iface': task.node.get_interface('boot'),
+                    'node': task.node.uuid, 'vendor': vendor,
+                    'fwv': bmc_manager[0].firmware_version})
+ 
+diff --git a/ironic/objects/node.py b/ironic/objects/node.py
+index d8bd96cf9..a1884209d 100644
+--- a/ironic/objects/node.py
++++ b/ironic/objects/node.py
+@@ -540,6 +540,12 @@ class Node(base.IronicObject, object_base.VersionedObjectDictCompat):
+         node = cls._from_db_object(context, cls(), db_node)
+         return node
+ 
++    def get_interface(self, iface):
++        iface_name = '%s_interface' % iface
++        impl_name = self.instance_info.get(iface_name,
++                                           getattr(self, iface_name))
++        return impl_name
++
+     def _convert_deploy_step_field(self, target_version,
+                                    remove_unavailable_fields=True):
+         # NOTE(rloo): Typically we set the value to None. However,
+diff --git a/ironic/tests/unit/objects/test_node.py b/ironic/tests/unit/objects/test_node.py
+index d8740aa09..9d6d101c8 100644
+--- a/ironic/tests/unit/objects/test_node.py
++++ b/ironic/tests/unit/objects/test_node.py
+@@ -534,6 +534,17 @@ class TestNodeObject(db_base.DbTestCase, obj_utils.SchemasTestMixIn):
+     def test_payload_schemas(self):
+         self._check_payload_schemas(objects.node, objects.Node.fields)
+ 
++    def test_get_interface(self):
++        node = obj_utils.get_test_node(self.ctxt, **self.fake_node)
++        node.deploy_interface = 'direct'
++        self.assertEqual('direct', node.get_interface('deploy'))
++
++    def test_get_interface_overriden(self):
++        node = obj_utils.get_test_node(self.ctxt, **self.fake_node)
++        node.deploy_interface = 'direct'
++        node.instance_info = {'deploy_interface': 'ramdisk'}
++        self.assertEqual('ramdisk', node.get_interface('deploy'))
++
+ 
+ class TestConvertToVersion(db_base.DbTestCase):
+ 
+diff --git a/releasenotes/notes/instance-info-interface-override-fix-043df41199529892.yaml b/releasenotes/notes/instance-info-interface-override-fix-043df41199529892.yaml
+new file mode 100644
+index 000000000..014d94274
+--- /dev/null
++++ b/releasenotes/notes/instance-info-interface-override-fix-043df41199529892.yaml
+@@ -0,0 +1,7 @@
++---
++fixes:
++  - |
++    Fixes issue with a node's instance_info interface override caused when
++    Ironic uses the interface attribute directly. Does so by adding a
++    `get_interface` method to a node, and updating the Ironic code to use it
++    where needed.
+-- 
+2.27.0
+

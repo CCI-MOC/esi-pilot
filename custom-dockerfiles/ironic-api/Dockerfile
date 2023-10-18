@@ -4,7 +4,7 @@ USER root
 WORKDIR /tmp
 
 RUN sed -i 's/$stream/8-stream/g' /etc/yum.repos.d/CentOS-* && \
-        yum -y install git && \
+        yum -y install --nogpgcheck git && \
         git config --global user.email "pilot@esi.moc" && \
         git config --global user.name "Pilot ESI" && \
         git clone https://review.opendev.org/openstack/ironic && \

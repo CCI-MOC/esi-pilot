@@ -4,7 +4,7 @@ USER root
 WORKDIR /tmp
 
 RUN sed -i 's/$stream/8-stream/g' /etc/yum.repos.d/CentOS-* && \
-        yum -y install git && \
+        yum -y install --nogpgcheck git && \
 	git clone https://github.com/CCI-MOC/network-runner && \
 	cd network-runner && \
         git checkout esi_network_runner && \

@@ -1,0 +1,108 @@
+From 4aec741e81c16dcd31dd2824d90bd6cc84a28167 Mon Sep 17 00:00:00 2001
+From: Jacob Anders <janders@redhat.com>
+Date: Mon, 09 Aug 2021 18:56:37 +1000
+Subject: [PATCH] Enable priority overrides to enable/disable steps
+
+Generic way to configure clean step priorites feature
+( https://review.opendev.org/c/openstack/ironic/+/744117 ) enabled support
+for customising clean step priorities for any clean step by setting a
+configuration option. However, due to an error in code, it was not possible
+to use this feature to enable/disable steps entirely using this option
+as overrides were applied too late, after the disabled steps were already
+filtered out.
+
+This change fixes this error, making it possible to use step priority
+override configuration option to enable/disable steps as required.
+
+Story: 2009105
+Change-Id: If3c01e6e4e8cedfe053e78fab9632bfff3682b06
+(cherry picked from commit 71481ac483f0d1784cb10643da4c734abbea352f)
+---
+
+diff --git a/ironic/conductor/steps.py b/ironic/conductor/steps.py
+index 88df4a4..4d75704 100644
+--- a/ironic/conductor/steps.py
++++ b/ironic/conductor/steps.py
+@@ -121,15 +121,22 @@
+     for interface in interfaces:
+         interface = getattr(task.driver, interface)
+         if interface:
+-            interface_steps = [x for x in getattr(interface, get_method)(task)
+-                               if not enabled or x['priority'] > 0]
++            # NOTE(janders) get all steps to start with, regardless of whether
++            # enabled is True and priority is zero or not; we need to apply
++            # priority overrides prior to filtering out disabled steps
++            interface_steps = [x for x in getattr(interface, get_method)(task)]
+             steps.extend(interface_steps)
++    # Iterate over steps to apply prio overrides if set
+     if prio_overrides is not None:
+         for step in steps:
+             override_key = '%(interface)s.%(step)s' % step
+             override_value = prio_overrides.get(override_key)
+             if override_value:
+                 step["priority"] = int(override_value)
++    # NOTE(janders) If enabled is set to True, we filter out steps with zero
++    # priority now, after applying priority overrides
++    if enabled:
++        steps = [x for x in steps if not (x.get('priority') == 0)]
+     if sort_step_key:
+         steps = _sorted_steps(steps, sort_step_key)
+     return steps
+diff --git a/ironic/tests/unit/conductor/test_steps.py b/ironic/tests/unit/conductor/test_steps.py
+index 33de756..1cba2c7 100644
+--- a/ironic/tests/unit/conductor/test_steps.py
++++ b/ironic/tests/unit/conductor/test_steps.py
+@@ -768,6 +768,38 @@
+ 
+         self.assertEqual(expected_step_priorities, steps)
+ 
++    @mock.patch('ironic.drivers.modules.fake.FakeDeploy.get_clean_steps',
++                autospec=True)
++    @mock.patch('ironic.drivers.modules.fake.FakePower.get_clean_steps',
++                autospec=True)
++    def test__get_cleaning_steps_priority_override_disable(self,
++                                                           mock_power_steps,
++                                                           mock_deploy_steps):
++        # Test clean_step_priority_override
++        cfg.CONF.set_override('clean_step_priority_override',
++                              ["deploy.erase_disks:0",
++                               "power.update_firmware:0",
++                               "deploy.update_firmware:0", ],
++                              'conductor')
++
++        node = obj_utils.create_test_node(
++            self.context, driver='fake-hardware',
++            provision_state=states.CLEANING,
++            target_provision_state=states.AVAILABLE)
++
++        mock_power_steps.return_value = [self.power_update]
++        mock_deploy_steps.return_value = [self.deploy_erase,
++                                          self.deploy_update,
++                                          self.deploy_raid]
++
++        with task_manager.acquire(
++                self.context, node.uuid, shared=True) as task:
++            steps = conductor_steps._get_cleaning_steps(task, enabled=True)
++
++        expected_step_priorities = []
++
++        self.assertEqual(expected_step_priorities, steps)
++
+     @mock.patch.object(conductor_steps, '_validate_user_clean_steps',
+                        autospec=True)
+     @mock.patch.object(conductor_steps, '_get_cleaning_steps', autospec=True)
+diff --git a/releasenotes/notes/fix-step-priority-overrides-edecff2a6c68dcac.yaml b/releasenotes/notes/fix-step-priority-overrides-edecff2a6c68dcac.yaml
+new file mode 100644
+index 0000000..46610d8
+--- /dev/null
++++ b/releasenotes/notes/fix-step-priority-overrides-edecff2a6c68dcac.yaml
+@@ -0,0 +1,9 @@
++---
++fixes:
++  - |
++    Resolve issue where ``[conductor]clean_step_priority_override`` values
++    are applied too late, after disabled steps have been already filtered out.
++    With this change, priority overrides are applied prior to filtering out
++    disabled steps, so that this configuration option can use used to enable
++    or disable steps (in particular clean steps) in addition to changing
++    priorities they are run with.
