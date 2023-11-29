@@ -24,4 +24,4 @@ cat > rules.json <<EOF
 ]
 EOF
 openstack mapping create --rules rules.json moc-mapping
-openstack federation protocol openid create --mapping moc-mapping --identity-provider moc
+openstack federation protocol create openid --mapping moc-mapping --identity-provider moc
