@@ -8,7 +8,7 @@ RUN sed -i 's/$stream/8-stream/g' /etc/yum.repos.d/CentOS-* && \
 	git clone https://github.com/CCI-MOC/network-runner && \
 	cd network-runner && \
         git checkout esi_network_runner && \
-	\cp -r etc/ansible/roles/network-runner/providers/nos /etc/ansible/roles/network-runner/providers/. && \
+	python3 setup.py install && \
 	yum clean all
 
 RUN cd /tmp && \
