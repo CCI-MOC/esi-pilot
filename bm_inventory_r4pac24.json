@@ -93,7 +93,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/28/1",
+            "port_id": "tengigabitethernet 1/27/3",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -102,7 +102,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/28/1",
+            "port_id": "tengigabitethernet 1/27/3",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -129,7 +129,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/28/2",
+            "port_id": "tengigabitethernet 1/27/4",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -138,7 +138,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/28/2",
+            "port_id": "tengigabitethernet 1/27/4",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -165,7 +165,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/27/3",
+            "port_id": "tengigabitethernet 1/28/1",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -174,7 +174,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/27/3",
+            "port_id": "tengigabitethernet 1/28/1",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -201,7 +201,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/27/4",
+            "port_id": "tengigabitethernet 1/28/2",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -210,7 +210,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/27/4",
+            "port_id": "tengigabitethernet 1/28/2",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -381,7 +381,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/26/1",
+            "port_id": "tengigabitethernet 1/25/3",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -390,7 +390,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/26/1",
+            "port_id": "tengigabitethernet 1/25/3",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -417,7 +417,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/26/2",
+            "port_id": "tengigabitethernet 1/25/4",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -426,7 +426,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/26/2",
+            "port_id": "tengigabitethernet 1/25/4",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -453,7 +453,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/25/3",
+            "port_id": "tengigabitethernet 1/26/1",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -462,7 +462,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/25/3",
+            "port_id": "tengigabitethernet 1/26/1",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -489,7 +489,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/25/4",
+            "port_id": "tengigabitethernet 1/26/2",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -498,7 +498,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/25/4",
+            "port_id": "tengigabitethernet 1/26/2",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -669,7 +669,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/24/1",
+            "port_id": "tengigabitethernet 1/23/3",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -678,7 +678,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/24/1",
+            "port_id": "tengigabitethernet 1/23/3",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -705,7 +705,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/24/2",
+            "port_id": "tengigabitethernet 1/23/4",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -714,7 +714,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/24/2",
+            "port_id": "tengigabitethernet 1/23/4",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -741,7 +741,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/23/3",
+            "port_id": "tengigabitethernet 1/24/1",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -750,7 +750,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/23/3",
+            "port_id": "tengigabitethernet 1/24/1",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -777,7 +777,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/23/4",
+            "port_id": "tengigabitethernet 1/24/2",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -786,7 +786,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/23/4",
+            "port_id": "tengigabitethernet 1/24/2",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -885,7 +885,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/22/1",
+            "port_id": "tengigabitethernet 1/21/3",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -894,7 +894,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/22/1",
+            "port_id": "tengigabitethernet 1/21/3",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -921,7 +921,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/22/2",
+            "port_id": "tengigabitethernet 1/21/4",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -930,7 +930,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/22/2",
+            "port_id": "tengigabitethernet 1/21/4",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -957,7 +957,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/21/3",
+            "port_id": "tengigabitethernet 1/22/1",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -966,7 +966,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/21/3",
+            "port_id": "tengigabitethernet 1/22/1",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
@@ -993,7 +993,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/21/4",
+            "port_id": "tengigabitethernet 1/22/2",
             "switch_id": "54:bf:64:ed:d7:c3"
           }
         },
@@ -1002,7 +1002,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC24-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/21/4",
+            "port_id": "tengigabitethernet 1/22/2",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
         }
