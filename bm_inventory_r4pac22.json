@@ -417,7 +417,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC22-SW-TORS-A",
-            "port_id": "tengigabitethernet 1/25/1",
+            "port_id": "tengigabitethernet 1/25/3",
             "switch_id": "34:17:eb:37:e7:82"
           }
         },
@@ -426,7 +426,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC22-SW-TORS-B",
-            "port_id": "tengigabitethernet 1/25/1",
+            "port_id": "tengigabitethernet 1/25/3",
             "switch_id": "d8:9e:f3:a2:18:22"
           }
         }
