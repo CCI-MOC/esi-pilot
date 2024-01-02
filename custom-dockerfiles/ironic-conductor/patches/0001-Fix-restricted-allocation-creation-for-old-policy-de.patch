@@ -1,0 +1,99 @@
+From 42b03703af02277e63c6f62378b27258ed240191 Mon Sep 17 00:00:00 2001
+From: Tzu-Mainn Chen <tzumainn@redhat.com>
+Date: Thu, 30 Sep 2021 20:41:47 +0000
+Subject: [PATCH] Fix restricted allocation creation for old policy defaults
+
+The logic for restricted allocation creation checks that the
+user is not trying to create an allocation with an owner other
+than themselves. However the logic as it stands will always fail,
+as it does not check if the user actually set an allocation owner.
+
+Change-Id: I780d8e88f9319dc37ab56309bddbfb6b5f3c9d13
+---
+
+diff --git a/ironic/api/controllers/v1/allocation.py b/ironic/api/controllers/v1/allocation.py
+index 73aca3a..ab6c6e5 100644
+--- a/ironic/api/controllers/v1/allocation.py
++++ b/ironic/api/controllers/v1/allocation.py
+@@ -323,9 +323,11 @@
+         except exception.HTTPForbidden:
+             cdict = api.request.context.to_policy_values()
+             project = cdict.get('project_id')
+-            if project and project != allocation.get('owner'):
++            if (project and allocation.get('owner')
++                and project != allocation.get('owner')):
+                 raise
+-            if project and not CONF.oslo_policy.enforce_new_defaults:
++            if (allocation.get('owner')
++                and not CONF.oslo_policy.enforce_new_defaults):
+                 api_utils.check_policy('baremetal:allocation:create_pre_rbac')
+             api_utils.check_policy('baremetal:allocation:create_restricted')
+             self._check_allowed_allocation_fields(allocation)
+diff --git a/ironic/tests/unit/api/controllers/v1/test_allocation.py b/ironic/tests/unit/api/controllers/v1/test_allocation.py
+index 39a1278..1be54db 100644
+--- a/ironic/tests/unit/api/controllers/v1/test_allocation.py
++++ b/ironic/tests/unit/api/controllers/v1/test_allocation.py
+@@ -1042,20 +1042,6 @@
+                                headers=self.headers)
+         self.assertEqual('123456', result['owner'])
+ 
+-    def test_create_allocation_is_restricted_until_scope_enforcement(self):
+-        cfg.CONF.set_override('enforce_new_defaults', False,
+-                              group='oslo_policy')
+-        cfg.CONF.set_override('auth_strategy', 'keystone')
+-        # We're setting ourselves to be a random ID and member
+-        # which is allowed to create an allocation.
+-        self.headers['X-Project-ID'] = '1135'
+-        self.headers['X-Roles'] = 'admin, member, reader'
+-        self.headers['X-Is-Admin-Project'] = 'False'
+-        adict = apiutils.allocation_post_data()
+-        response = self.post_json('/allocations', adict, expect_errors=True,
+-                                  headers=self.headers)
+-        self.assertEqual(http_client.FORBIDDEN, response.status_int)
+-
+     def test_backfill(self):
+         node = obj_utils.create_test_node(self.context)
+         adict = apiutils.allocation_post_data(node=node.uuid)
+@@ -1172,6 +1158,29 @@
+         self.assertTrue(response.json['error_message'])
+ 
+     @mock.patch.object(policy, 'authorize', autospec=True)
++    def test_create_restricted_allocation_deprecated_without_owner(
++            self, mock_authorize):
++        cfg.CONF.set_override('enforce_new_defaults', False,
++                              group='oslo_policy')
++
++        def mock_authorize_function(rule, target, creds):
++            if rule == 'baremetal:allocation:create':
++                raise exception.HTTPForbidden(resource='fake')
++            return True
++        mock_authorize.side_effect = mock_authorize_function
++        owner = '12345'
++        adict = apiutils.allocation_post_data()
++        headers = {api_base.Version.string: '1.60', 'X-Project-Id': owner}
++        response = self.post_json('/allocations', adict, headers=headers)
++        self.assertEqual('application/json', response.content_type)
++        self.assertEqual(http_client.CREATED, response.status_int)
++        self.assertEqual(owner, response.json['owner'])
++        result = self.get_json('/allocations/%s' % adict['uuid'],
++                               headers=headers)
++        self.assertEqual(adict['uuid'], result['uuid'])
++        self.assertEqual(owner, result['owner'])
++
++    @mock.patch.object(policy, 'authorize', autospec=True)
+     def test_create_restricted_allocation_with_owner(self, mock_authorize):
+         def mock_authorize_function(rule, target, creds):
+             if rule == 'baremetal:allocation:create':
+diff --git a/releasenotes/notes/restricted-allocation-creation-fix-a70dfcbcb9996602.yaml b/releasenotes/notes/restricted-allocation-creation-fix-a70dfcbcb9996602.yaml
+new file mode 100644
+index 0000000..147b56f
+--- /dev/null
++++ b/releasenotes/notes/restricted-allocation-creation-fix-a70dfcbcb9996602.yaml
+@@ -0,0 +1,7 @@
++---
++fixes:
++  - |
++    Fixes restricted allocation creation for old policy defaults. This involves
++    a check that ensures that the user is not trying to create an allocation with
++    an owner other than themselves. This check is updated to also see if the
++    user is actually trying to set an allocation owner.

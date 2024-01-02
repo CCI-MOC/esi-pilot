@@ -16,5 +16,5 @@ openstack overcloud deploy --stack overcloud \
 		-e tls-endpoints-public-dns.yaml \
 		-e cloudname.yaml \
 		-e esi-custom.yaml \
-		-e keystone_extraconfig.yaml \
+		-e sso_extraconfig.yaml \
 		-e sso_vars.yaml
