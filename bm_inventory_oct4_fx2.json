@@ -1,0 +1,964 @@
+{
+    "nodes": [
+        {
+            "name": "oct4-cha1-1a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.111",
+                "ipmi_terminal_port": 8100
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:B5:A1",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/49/1",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-1b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.112",
+                "ipmi_terminal_port": 8101
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:B6:8F",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/49/2",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-1c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.113",
+                "ipmi_terminal_port": 8102
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:B6:09",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/49/3",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-1d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.114",
+                "ipmi_terminal_port": 8103
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:BC:47",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/49/4",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-3a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.115",
+                "ipmi_terminal_port": 8104
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:B5:BB",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/50/1",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-3b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.116",
+                "ipmi_terminal_port": 8105
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:B7:FD",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/50/2",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-3c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.117",
+                "ipmi_terminal_port": 8106
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:B6:23",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/50/3",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha1-3d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.118",
+                "ipmi_terminal_port": 8107
+            },
+            "ports": [
+                {
+                    "address": "B4:E1:0F:C7:BD:B5",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/50/4",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-1a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.121",
+                "ipmi_terminal_port": 8200
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:63:81",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/51/1",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-1b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.122",
+                "ipmi_terminal_port": 8201
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:64:6F",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/51/2",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-1c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.123",
+                "ipmi_terminal_port": 8202
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:63:E9",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/51/3",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-1d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.124",
+                "ipmi_terminal_port": 8203
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:6A:27",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/51/4",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-3a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.125",
+                "ipmi_terminal_port": 8204
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:63:9B",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/52/1",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-3b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.126",
+                "ipmi_terminal_port": 8205
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:65:DD",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/52/2",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-3c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.127",
+                "ipmi_terminal_port": 8206
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:64:03",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/53/3",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha2-3d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.128",
+                "ipmi_terminal_port": 8207
+            },
+            "ports": [
+                {
+                    "address": "E0:D8:48:E4:6B:95",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "OCT4-SW-ESIDEV",
+                        "port_id": "tengigabitethernet 1/54/4",
+                        "switch_id": "68:4f:64:1d:01:d5"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-1a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.131",
+                "ipmi_terminal_port": 8036
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:0A:01",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/33",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-1b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.132",
+                "ipmi_terminal_port": 8037
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:0A:EF",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/34",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-1c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.133",
+                "ipmi_terminal_port": 8038
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:0A:69",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/35",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-1d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.134",
+                "ipmi_terminal_port": 8039
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:10:A7",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/36",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-3a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.135",
+                "ipmi_terminal_port": 8040
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:0A:1B",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/37",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-3b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.136",
+                "ipmi_terminal_port": 8041
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:0C:5D",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/38",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-3c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.137",
+                "ipmi_terminal_port": 8042
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:0A:83",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/39",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha3-3d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.138",
+                "ipmi_terminal_port": 8043
+            },
+            "ports": [
+                {
+                    "address": "A8:99:69:A7:12:15",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/40",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-1a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.141",
+                "ipmi_terminal_port": 8044
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A1:71",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/41",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-1b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.142",
+                "ipmi_terminal_port": 8045
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A2:5F",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/42",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-1c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.143",
+                "ipmi_terminal_port": 8046
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A1:D9",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/43",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-1d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.144",
+                "ipmi_terminal_port": 8047
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A8:17",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/44",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-3a",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.145",
+                "ipmi_terminal_port": 8048
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A1:8B",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/45",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-3b",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.146",
+                "ipmi_terminal_port": 8049
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A3:CD",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/46",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-3c",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.147",
+                "ipmi_terminal_port": 8050
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A1:F3",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/47",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "oct4-cha4-3d",
+            "properties": {
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "size": ">= 50"
+                }
+            },
+            "resource_class": "baremetal",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "xxxxxxxx",
+                "ipmi_address": "10.2.4.148",
+                "ipmi_terminal_port": 8051
+            },
+            "ports": [
+                {
+                    "address": "D8:D0:90:DA:A9:85",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "switch1",
+                        "port_id": "tengigabitethernet 1/48",
+                        "switch_id": "4c:d9:8f:dc:e0:cb"
+                    }
+                }
+            ]
+        }
+    ]
+}
