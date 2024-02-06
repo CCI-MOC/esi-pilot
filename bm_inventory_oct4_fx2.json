@@ -444,7 +444,7 @@
                     "physical_network": "datacentre",
                     "local_link_connection": {
                         "switch_info": "OCT4-SW-ESIDEV",
-                        "port_id": "tengigabitethernet 1/53/3",
+                        "port_id": "tengigabitethernet 1/52/3",
                         "switch_id": "68:4f:64:1d:01:d5"
                     }
                 }
@@ -474,7 +474,7 @@
                     "physical_network": "datacentre",
                     "local_link_connection": {
                         "switch_info": "OCT4-SW-ESIDEV",
-                        "port_id": "tengigabitethernet 1/54/4",
+                        "port_id": "tengigabitethernet 1/52/4",
                         "switch_id": "68:4f:64:1d:01:d5"
                     }
                 }
