@@ -1,0 +1,15 @@
+{
+    "description": "extra ESI introspection rules",
+    "actions": [
+        {
+            "action": "set-attribute",
+            "path": "/properties/cpu_model_name",
+            "value": "{data[inventory][cpu][model_name]}"
+        },
+        {
+            "action": "set-attribute",
+            "path": "/properties/cpu_frequency",
+            "value": "{data[inventory][cpu][frequency]}"
+        }
+    ]
+}
