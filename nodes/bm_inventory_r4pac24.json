@@ -1011,9 +1011,10 @@
     {
       "name": "MOC-R4PAC24U29-S1",
       "properties": {
-        "capabilities": "iscsi_boot:True"
+        "capabilities": "iscsi_boot:True",
+        "root_device": "{\"wwn\": \"0x5002538a4897cc70\"}"
       },
-      "resource_class": "baremetal",
+      "resource_class": "fc830-nvme",
       "driver": "ipmi",
       "driver_info": {
         "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -1041,6 +1042,24 @@
             "port_id": "twentyfivegige 1/7/3",
             "switch_id": "0c:29:ef:bd:a8:a2"
           }
+        },
+        {
+          "address": "00:02:c9:a0:f6:40",
+          "physical_network": "datacentre",
+          "local_link_connection": {
+              "switch_info": "MOC-R4PAC24-SW-TORS-A",
+              "port_id": "fortygige 1/17/1",
+              "switch_id": "54:bf:64:ed:d7:c3"
+          }
+        },
+        {
+            "address": "00:02:c9:a0:f6:41",
+            "physical_network": "datacentre",
+            "local_link_connection": {
+                "switch_info": "MOC-R4PAC24-SW-TORS-B",
+                "port_id": "fortygige 1/17/1",
+                "switch_id": "0c:29:ef:bd:a8:a2"
+            }
         }
       ]
     },

@@ -1083,9 +1083,10 @@
         {
             "name": "MOC-R4PAC08U29-S1",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+                "root_device": "{\"wwn\": \"0x5002538a4910ece0\"}"
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc830-nvme",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -1111,6 +1112,24 @@
                     "local_link_connection": {
                         "switch_info": "MOC-R4PAC08-SW-TORS-B",
                         "port_id": "twentyfivegige 1/7/3",
+                        "switch_id": "4c:76:25:e7:e3:42"
+                    }
+                },
+                {
+                    "address": "f4:52:14:01:b9:e1",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PAC08-SW-TORS-A",
+                        "port_id": "fortygige 1/17/1",
+                        "switch_id": "d8:9e:f3:ae:e5:a2"
+                    }
+                },
+                {
+                    "address": "f4:52:14:01:b9:e2",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PAC08-SW-TORS-B",
+                        "port_id": "fortygige 1/17/1",
                         "switch_id": "4c:76:25:e7:e3:42"
                     }
                 }
