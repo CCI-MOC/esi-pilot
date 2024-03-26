@@ -1048,7 +1048,9 @@
       "name": "MOC-R4PAC21U29-S1",
       "properties": {
         "capabilities": "iscsi_boot:True",
-        "root_device": "{\"wwn\": \"0x5002538a07289a80\"}"
+        "root_device": {
+          "wwn": "0x5002538a07289a80"
+        }
       },
       "resource_class": "fc830-nvme",
       "driver": "ipmi",
