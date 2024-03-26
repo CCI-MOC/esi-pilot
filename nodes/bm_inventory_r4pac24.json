@@ -1046,6 +1046,7 @@
         {
           "address": "00:02:c9:a0:f6:40",
           "physical_network": "datacentre",
+          "pxe_enabled": "False",
           "local_link_connection": {
               "switch_info": "MOC-R4PAC24-SW-TORS-A",
               "port_id": "fortygige 1/17/1",
@@ -1055,6 +1056,7 @@
         {
             "address": "00:02:c9:a0:f6:41",
             "physical_network": "datacentre",
+            "pxe_enabled": "False",
             "local_link_connection": {
                 "switch_info": "MOC-R4PAC24-SW-TORS-B",
                 "port_id": "fortygige 1/17/1",
