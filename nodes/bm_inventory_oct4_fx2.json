@@ -8,7 +8,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -38,7 +38,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -68,7 +68,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -98,7 +98,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -128,7 +128,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -158,7 +158,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -188,7 +188,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -218,7 +218,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -248,7 +248,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -278,7 +278,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -308,7 +308,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -338,7 +338,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -368,7 +368,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -398,7 +398,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -428,7 +428,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -458,7 +458,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -488,7 +488,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -518,7 +518,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -548,7 +548,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -578,7 +578,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -608,7 +608,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -638,7 +638,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -668,7 +668,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -698,7 +698,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -728,7 +728,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -758,7 +758,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -788,7 +788,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -818,7 +818,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -848,7 +848,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -878,7 +878,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -908,7 +908,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
@@ -938,7 +938,7 @@
                     "size": ">= 50"
                 }
             },
-            "resource_class": "baremetal",
+            "resource_class": "fc430",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
