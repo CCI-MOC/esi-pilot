@@ -3,7 +3,7 @@
         {
             "name": "oct4-02",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r720",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -30,7 +30,7 @@
         {
             "name": "oct4-03",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r720xd",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -57,7 +57,7 @@
 	{
             "name": "oct4-06",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r720xd",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -84,7 +84,7 @@
 	{
             "name": "oct4-08",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r730",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -111,7 +111,7 @@
         {
             "name": "oct4-09",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r730xd",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -138,7 +138,7 @@
         {
             "name": "oct4-10",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r730xd",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -175,7 +175,7 @@
         {
             "name": "oct4-12",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r730xd",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -202,7 +202,7 @@
         {
             "name": "oct4-13",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r730xd",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -229,7 +229,7 @@
         {
             "name": "oct4-14",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r630",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -256,7 +256,7 @@
         {
             "name": "oct4-15",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r620",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -283,7 +283,7 @@
 	{
             "name": "oct4-16",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r620",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
@@ -310,7 +310,7 @@
         {
             "name": "oct4-17",
             "driver": "ipmi",
-            "resource_class": "baremetal",
+            "resource_class": "r620",
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
