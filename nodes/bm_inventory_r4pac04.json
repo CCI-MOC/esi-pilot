@@ -53,7 +53,7 @@
             },
             "ports": [
                 {
-                    "address": "40:A6:B7:C3:37:35",
+                    "address": "40:A6:B7:C3:37:34",
                     "physical_network": "datacentre",
                     "local_link_connection": {
                         "switch_info": "MOC-R4PAC04-SW-TORS",
@@ -62,7 +62,7 @@
                     }
                 },
                 {
-                    "address": "40:A6:B7:C3:37:34",
+                    "address": "40:A6:B7:C3:37:35",
                     "physical_network": "datacentre",
                     "local_link_connection": {
                         "switch_info": "MOC-R4PAC04-SW-TORS",
