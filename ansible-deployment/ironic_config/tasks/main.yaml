@@ -25,6 +25,11 @@
          path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
          insertafter: ^# *extra_kernel_params *=.*
          line: extra_kernel_params = ipa-inspection-collectors=default,pci-devices
+     - name: Extend rpc response timeout
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic_inspector/etc/ironic-inspector/inspector.conf
+         insertafter: ^# *rpc_response_timeout *=.*
+         line: rpc_response_timeout = 600
      - name: Update inspection processing hooks
        lineinfile:
          path: /var/lib/config-data/puppet-generated/ironic_inspector/etc/ironic-inspector/inspector.conf
