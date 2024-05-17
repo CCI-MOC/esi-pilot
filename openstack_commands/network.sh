@@ -7,7 +7,7 @@ openstack subnet create \
       --subnet-range 192.168.11.0/24  \
       --ip-version 4 \
       --gateway 192.168.11.254 \
-      --allocation-pool start=192.168.11.51,end=192.168.11.149 \
+      --allocation-pool start=192.168.11.11,end=192.168.11.245 \
       --dns-nameserver 8.8.8.8 \
       --dhcp subnet-provisioning
 
