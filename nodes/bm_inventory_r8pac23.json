@@ -3,7 +3,7 @@
         {
             "name": "MOC-R8PAC23U27",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
             },
             "resource_class": "lenovo-sd650nv2-a100",
             "driver": "ipmi",
@@ -30,7 +30,7 @@
         {
             "name": "MOC-R8PAC23U28",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
             },
             "resource_class": "lenovo-sd650nv2-a100",
             "driver": "ipmi",
@@ -57,7 +57,7 @@
         {
             "name": "MOC-R8PAC23U30",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
             },
             "resource_class": "lenovo-sd650nv2-a100",
             "driver": "ipmi",
@@ -84,7 +84,7 @@
         {
             "name": "MOC-R8PAC23U31",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
             },
             "resource_class": "lenovo-sd650nv2-a100",
             "driver": "ipmi",
