@@ -41,6 +41,9 @@
      - name: Copy ipxe.lkrn to /var/lib/neutron/dhcp
        copy: src=ipxe.lkrn dest=/var/lib/neutron/dhcp mode=0644
 
+     - name: Copy ipxe-snponly-custom.efi to /var/lib/neutron/dhcp
+       copy: src=ipxe-snponly-custom.efi dest=/var/lib/neutron/dhcp mode=0644
+
      - name: Change /var/lib/neutron/dhcp permission to 755
        file:
          path: /var/lib/neutron/dhcp
