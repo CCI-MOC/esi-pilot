@@ -15,6 +15,16 @@
          path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
          insertafter: ^# *rpc_response_timeout *=.*
          line: rpc_response_timeout = 600
+     - name: Set rescue kernel image
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
+         insertafter: ^# *rescue_kernel *=.*
+         line: rescue_kernel = {{ rescue_kernel }}
+     - name: Set rescue ramdisk image
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
+         insertafter: ^# *rescue_ramdisk *=.*
+         line: rescue_ramdisk = {{ rescue_ramdisk }}
      - name: Change socat address
        lineinfile:
          path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf

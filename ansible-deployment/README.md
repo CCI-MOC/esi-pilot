@@ -25,7 +25,7 @@ ansible-playbook -i inventory.yaml switch/tasks/main.yaml --extra-vars ansible_s
 ansible-playbook -i inventory.yaml dnsmasq/tasks/main.yaml
 ansible-playbook -i inventory.yaml policy/tasks/main.yaml
 ansible-playbook -i inventory.yaml neutron_config/tasks/main.yaml
-ansible-playbook -i inventory.yaml ironic_config/tasks/main.yaml
+ansible-playbook -i inventory.yaml ironic_config/tasks/main.yaml --extra-vars rescue_kernel="<rescue_kernel_image_uuid>" --extra-vars rescue_ramdisk="<rescue_ramdisk_image_uuid>"
 ansible-playbook -i inventory.yaml volume/tasks/main.yaml --extra-vars rbd_iscsi_api_password="xxx" --extra-vars rbd_secret_uuid="xxx"
 re-new ssl certificate:
 ansible-playbook -i inventory.yaml ssl_certificate_renew/tasks/main.yaml --extra-vars AWS_ACCESS_KEY_ID="xxx" --extra-vars AWS_SECRET_ACCESS_KEY="xxx"
