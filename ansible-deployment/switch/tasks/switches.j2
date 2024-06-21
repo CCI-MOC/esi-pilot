@@ -189,3 +189,16 @@ mac=68:4f:64:1d:01:d5
 manage_vlans=True
 ansible_connection=local
 stp_edge=True
+[ansible:NERC-R8PAC23-SW-TORS]
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=dellemc.os9.os9
+ansible_host=10.2.18.1
+ansible_user=admin
+ansible_ssh_pass={{ ansible_sw_moc_ssh_password }}
+ansible_become_password={{ ansible_sw_moc_ssh_password }}
+ansible_become=yes
+ansible_become_method=enable
+mac=54:bf:64:aa:86:c2
+manage_vlans=True
+ansible_connection=local
+stp_edge=True
