@@ -3,7 +3,7 @@
     {
       "name": "MOC-R8PAC23U39",
       "properties": {
-        "capabilities": "iscsi_boot:True"
+        "capabilities": "boot_mode:uefi,iscsi_boot:True"
       },
       "resource_class": "sd650nv2",
       "driver": "ipmi",
