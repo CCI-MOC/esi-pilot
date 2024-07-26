@@ -9,6 +9,8 @@ RUN sed -i 's/$stream/8-stream/g' /etc/yum.repos.d/CentOS-* && \
 	cd network-runner && \
         git checkout esi_network_runner && \
 	python3 setup.py install && \
+	\mv /etc/ansible/roles/network-runner /etc/ansible/roles/network-runner.bak && \
+	\cp -r etc/ansible/roles/network-runner /etc/ansible/roles/ && \
 	yum clean all
 
 RUN cd /tmp && \

@@ -15,10 +15,44 @@
          path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
          insertafter: ^# *rpc_response_timeout *=.*
          line: rpc_response_timeout = 600
+     - name: Set rescue kernel image
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
+         insertafter: ^# *rescue_kernel *=.*
+         line: rescue_kernel = {{ rescue_kernel }}
+     - name: Set rescue ramdisk image
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
+         insertafter: ^# *rescue_ramdisk *=.*
+         line: rescue_ramdisk = {{ rescue_ramdisk }}
      - name: Change socat address
        lineinfile:
          path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
          insertafter: ^# *socat_address *=.*
          line: socat_address = {{ public_ip }}
-     - name: restart ironic container
-       command: podman container restart ironic_conductor
+     - name: Add extra kernel params for inspection
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic/etc/ironic/ironic.conf
+         insertafter: ^# *extra_kernel_params *=.*
+         line: extra_kernel_params = ipa-inspection-collectors=default,pci-devices
+     - name: Extend rpc response timeout
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic_inspector/etc/ironic-inspector/inspector.conf
+         insertafter: ^# *rpc_response_timeout *=.*
+         line: rpc_response_timeout = 600
+     - name: Update inspection processing hooks
+       lineinfile:
+         path: /var/lib/config-data/puppet-generated/ironic_inspector/etc/ironic-inspector/inspector.conf
+         insertafter: ^# *processing_hooks *=.*
+         line: processing_hooks=$default_processing_hooks,extra_hardware,lldp_basic,local_link_connection,physnet_cidr_map,accelerators
+     - name: Add accelerators section to inspection
+       blockinfile:
+         path: /var/lib/config-data/puppet-generated/ironic_inspector/etc/ironic-inspector/inspector.conf
+         backup: yes
+         block: |
+          [accelerators]
+          known_devices=/etc/ironic-inspector/accelerators.yaml
+     - name: Copy custom accelerators.yaml
+       copy: src=accelerators.yaml dest=/var/lib/config-data/puppet-generated/ironic_inspector/etc/ironic-inspector mode=0644
+    - name: restart ironic containers
+       command: podman container restart ironic_conductor ironic_inspector

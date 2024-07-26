@@ -49,6 +49,13 @@ def inspect_node(conn, node):
         # make sure node exists
         node_obj = conn.baremetal.get_node(node)
 
+        if node_obj.provision_state != 'manageable':
+            print("%s: moving to manageable" % node)
+            conn.baremetal.set_node_provision_state(node, 'manage')
+            conn.baremetal.wait_for_nodes_provision_state(
+                [node], 'manageable'
+            )
+
         # inspect node
         print("%s: inspecting" % node)
         conn.baremetal.set_node_provision_state(node, 'inspect')

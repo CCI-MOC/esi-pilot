@@ -1,0 +1,2 @@
+#!ipxe
+dhcp && chain http://192.168.24.9:8088/boot.ipxe || dhcp && chain http://192.168.24.16:8088/boot.ipxe || dhcp && chain http://192.168.24.23:8088/boot.ipxe

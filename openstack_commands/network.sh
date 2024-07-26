@@ -7,7 +7,7 @@ openstack subnet create \
       --subnet-range 192.168.11.0/24  \
       --ip-version 4 \
       --gateway 192.168.11.254 \
-      --allocation-pool start=192.168.11.51,end=192.168.11.149 \
+      --allocation-pool start=192.168.11.11,end=192.168.11.245 \
       --dns-nameserver 8.8.8.8 \
       --dhcp subnet-provisioning
 
@@ -36,6 +36,18 @@ openstack subnet create \
           --allocation-pool start=128.31.20.31,end=128.31.20.240 \
           --dns-nameserver 8.8.8.8 \
           --dhcp subnet-external
+
+# NESE storage network
+openstack network create --provider-network-type vlan --provider-segment 211 --provider-physical-network datacentre  --share nese-storage
+openstack subnet create \
+          --network nese-storage \
+          --subnet-range 10.0.120.0/22  \
+          --ip-version 4 \
+          --allocation-pool start=10.0.121.0,end=10.0.123.254 \
+          --host-route destination=10.255.116.0/23,gateway=10.0.120.1 \
+          --host-route destination=10.247.236.0/25,gateway=10.0.120.1 \
+          --host-route destination=140.247.236.0/25,gateway=10.0.120.1 \
+          --dhcp subnet-nese-storage
 
 # provisioning router
 openstack router create provisionrouter
