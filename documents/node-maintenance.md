@@ -101,3 +101,7 @@ If there is a need to factory reset the chassis management controller in a CMC, 
 1. Serial into the CMC, login with `root`/`calvin`
 1. `racadm racresetcfg` to factory reset the CFG
 1. `racadm setniccfg -d` to enable dhcp on the CMC
+
+## Discussion/Collaboration
+
+You can reach all the ESI admins in the #ESI slack channel in the MOCA slack. We can set this channel up as a connection to existing slack workplaces on request.
