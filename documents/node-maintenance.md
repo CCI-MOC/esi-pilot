@@ -68,7 +68,7 @@ For a node to be returned to service, it must have the following acceptance crit
     1. The node state will either go back to `managed` if successful, or `inspect failed` if not
 1. Passed cleaning
     1. To clean a node it must be managed
-    1. To clan a node use the command `openstack --os-cloud=esi baremetal node provide <NODE LABEL>`
+    1. To clean a node use the command `openstack --os-cloud=esi baremetal node provide <NODE LABEL>`
     1. The node will be `available` if successful (no longer managed), or `clean failed` if not
 1. Passed deployment
     1. The node must be able to be deployed with an image.
