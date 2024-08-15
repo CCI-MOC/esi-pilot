@@ -80,7 +80,7 @@ After all of this is successful, let ESI admins know and they will take the node
 
 ### Hardware Issues
 
-If the issue is related to a hardware component, you can use any spare hardware from the spare hardware storage rack R4-PA-C20. If the issue is with an individual blade in a chassis you can replace without notice. If the chassis requires a hardware swap and not all the blades in the chassis are `hwbroken`, then that would need to be coordinated with ESI admins.
+If the issue is related to a hardware component, you can use any spare hardware from the spare hardware storage rack R4-PA-C22. If the issue is with an individual blade in a chassis you can replace without notice. If the chassis requires a hardware swap and not all the blades in the chassis are `hwbroken`, then that would need to be coordinated with ESI admins.
 
 ## Physical Hardware
 
