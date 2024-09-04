@@ -1,6 +1,60 @@
 {
   "nodes": [
     {
+      "name": "MOC-R8PAC23U25",
+      "properties": {
+         "capabilities": "boot_mode:uefi,iscsi_boot:True"
+      },
+      "resource_class": "lenovo-sd650nv2-a100",
+      "driver": "ipmi",
+      "driver_info": {
+        "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+        "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+        "ipmi_username": "root",
+        "ipmi_password": "",
+        "ipmi_address": "10.2.18.125",
+        "ipmi_terminal_port": 18125
+      },
+      "ports": [
+        {
+          "address": "08:8F:C3:A5:FF:B0",
+          "physical_network": "datacentre",
+          "local_link_connection": {
+            "switch_info": "NERC-R8PAC23-SW-TORS",
+            "port_id": "twentyfivegige 1/3",
+            "switch_id": "54:bf:64:aa:86:c2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MOC-R8PAC23U26",
+      "properties": {
+         "capabilities": "boot_mode:uefi,iscsi_boot:True"
+      },
+      "resource_class": "lenovo-sd650nv2-a100",
+      "driver": "ipmi",
+      "driver_info": {
+        "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+        "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+        "ipmi_username": "root",
+        "ipmi_password": "",
+        "ipmi_address": "10.2.18.126",
+        "ipmi_terminal_port": 18126
+      },
+      "ports": [
+        {
+          "address": "08:8F:C3:A5:FF:5C",
+          "physical_network": "datacentre",
+          "local_link_connection": {
+            "switch_info": "NERC-R8PAC23-SW-TORS",
+            "port_id": "twentyfivegige 1/4",
+            "switch_id": "54:bf:64:aa:86:c2"
+          }
+        }
+      ]
+    },
+    {
       "name": "MOC-R8PAC23U27",
       "properties": {
          "capabilities": "boot_mode:uefi,iscsi_boot:True"
