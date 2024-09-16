@@ -106,6 +106,16 @@ parameter_defaults:
     modify_vars:
       tasks_from: modify_image.yml
       modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/ironic-api
+  - push_destination: 192.168.24.1:8787
+    set:
+      namespace: quay.io/tripleowallaby
+    includes:
+    - horizon
+    modify_role: tripleo-modify-image
+    modify_append_tag: "-hotfix-esi-ui"
+    modify_vars:
+      tasks_from: modify_image.yml
+      modify_dir_path: /home/stack/esi-pilot/custom-dockerfiles/horizon
   EnableCache: False
   ExtraConfig:
     tripleo::haproxy::neutron::options:
