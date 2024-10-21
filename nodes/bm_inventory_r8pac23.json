@@ -17,7 +17,7 @@
       },
       "ports": [
         {
-          "address": "08:8F:C3:A5:FF:B0",
+          "address": "08:8F:C3:A2:BB:6A",
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R8PAC23-SW-TORS",
