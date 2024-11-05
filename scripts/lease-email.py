@@ -90,11 +90,12 @@ def main():
 
             # get users associated with project
             emails = get_project_emails(project.id, role_assignments, users)
-            to = ','.join(emails)
-            subject = subject_template.format(project=project.name)
-            body = body_template.format(lease_table=lease_table)
-            print("Sending email to %s" % to)
-            send_email(smtp_from, to, subject, body, smtp_server, smtp_port, smtp_username, smtp_password)
+            if len(emails) > 0:
+                to = ','.join(emails)
+                subject = subject_template.format(project=project.name)
+                body = body_template.format(lease_table=lease_table)
+                print("Sending email to %s" % to)
+                send_email(smtp_from, to, subject, body, smtp_server, smtp_port, smtp_username, smtp_password)
 
 if __name__ == "__main__":
     main()
