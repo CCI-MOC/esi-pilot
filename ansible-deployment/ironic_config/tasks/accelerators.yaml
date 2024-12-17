@@ -11,3 +11,7 @@ pci_devices:
     device_id: "20b0"
     type: GPU
     device_info: NVIDIA Corporation GA100
+  - vendor_id: "1002"
+    device_id: "740f"
+    type: GPU
+    device_info: AMD Aldebaran/MI200 [Instinct MI210]
