@@ -1720,7 +1720,7 @@
             "properties": {
                 "capabilities": "iscsi_boot:True"
             },
-            "resource_class": "fc830",
+            "resource_class": "fc830-nvme",
             "driver": "ipmi",
             "driver_info": {
                 "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
