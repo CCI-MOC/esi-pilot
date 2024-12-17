@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "name": "MOC-AMDTEST1",
+      "properties": {
+        "capabilities": "boot_mode:uefi,iscsi_boot:True"
+      },
+      "resource_class": "r740xd_amdmi210",
+      "driver": "ipmi",
+      "driver_info": {
+        "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+        "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+        "ipmi_username": "root",
+        "ipmi_password": "",
+        "ipmi_address": "10.2.17.220",
+        "ipmi_terminal_port": 17220
+      },
+      "ports": [
+        {
+          "address": "B0:26:28:1A:56:DC",
+          "physical_network": "datacentre",
+          "local_link_connection": {
+            "switch_info": "MOC-R4PAC02-SW-TORS",
+            "port_id": "twentyfivegige 1/33",
+            "switch_id": "54:bf:64:b3:52:c2"
+          }
+        },
+        {
+          "address": "B0:26:28:1A:56:DD",
+          "physical_network": "datacentre",
+          "local_link_connection": {
+            "switch_info": "MOC-R4PAC02-SW-TORS",
+            "port_id": "twentyfivegige 1/34",
+            "switch_id": "54:bf:64:b3:52:c2"
+          }
+        }
+      ]
+    }
+  ]
+}
