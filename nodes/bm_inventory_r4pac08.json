@@ -1826,7 +1826,10 @@
         {
             "name": "MOC-R4PAC08U09-S1",
             "properties": {
-                "capabilities": "iscsi_boot:True"
+                "capabilities": "iscsi_boot:True",
+                "root_device": {
+                    "wwn": "0x5000cca0a004a6f8"
+                }
             },
             "resource_class": "fc830-nvme",
             "driver": "ipmi",

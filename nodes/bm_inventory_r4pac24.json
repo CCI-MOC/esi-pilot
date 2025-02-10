@@ -1754,7 +1754,10 @@
     {
       "name": "MOC-R4PAC24U09-S1",
       "properties": {
-        "capabilities": "iscsi_boot:True"
+        "capabilities": "iscsi_boot:True",
+        "root_device": {
+            "wwn": "0x5000cca0a00484e4"
+        }
       },
       "resource_class": "fc830-nvme",
       "driver": "ipmi",
