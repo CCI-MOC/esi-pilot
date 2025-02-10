@@ -15,6 +15,7 @@ parameter_defaults:
   NeutronMechanismDrivers: [openvswitch, baremetal]
   NeutronNetworkVLANRanges: datacentre:351:464,datacentre:520:622,datacentre:624:630
   NeutronTypeDrivers: [local, geneve, vlan, flat, vxlan]
+  NeutronGlobalPhysnetMtu: 9000
 
   PublicVirtualFixedIPs: [{'ip_address':'129.10.5.144'}]
 
