@@ -1,0 +1,412 @@
+{
+    "nodes": [
+        {
+            "name": "MOC-R4PCC04U03",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.103",
+                "ipmi_terminal_port": 20103
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U04",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.104",
+                "ipmi_terminal_port": 20104
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U05",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.105",
+                "ipmi_terminal_port": 20105
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U06",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.106",
+                "ipmi_terminal_port": 20106
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U09",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.109",
+                "ipmi_terminal_port": 20109
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U10",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.110",
+                "ipmi_terminal_port": 20110
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U11",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.111",
+                "ipmi_terminal_port": 20111
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U12",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.112",
+                "ipmi_terminal_port": 20112
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U15",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.115",
+                "ipmi_terminal_port": 20115
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U16",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.116",
+                "ipmi_terminal_port": 20116
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U17",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.117",
+                "ipmi_terminal_port": 20117
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U18",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.118",
+                "ipmi_terminal_port": 20118
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U23",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.123",
+                "ipmi_terminal_port": 20123
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U24",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.124",
+                "ipmi_terminal_port": 20124
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U25",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.125",
+                "ipmi_terminal_port": 20125
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U26",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.126",
+                "ipmi_terminal_port": 20126
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U29",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.129",
+                "ipmi_terminal_port": 20129
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U30",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.130",
+                "ipmi_terminal_port": 20130
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U31",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.131",
+                "ipmi_terminal_port": 20131
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U32",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.132",
+                "ipmi_terminal_port": 20132
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U35",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.135",
+                "ipmi_terminal_port": 20135
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U36",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.136",
+                "ipmi_terminal_port": 20136
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U37",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.137",
+                "ipmi_terminal_port": 20137
+            },
+            "ports": []
+        },
+        {
+            "name": "MOC-R4PCC04U38",
+            "properties": {
+                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+            },
+            "resource_class": "lenovo-sd665nv3-h100",
+            "driver": "ipmi",
+            "driver_info": {
+                "deploy_kernel": "42298c88-7927-4fa5-999a-a4f03a8c3272",
+                "deploy_ramdisk": "bb5adbc2-0d7a-4993-ace4-b30a6385c9fd",
+                "ipmi_username": "root",
+                "ipmi_password": "",
+                "ipmi_address": "10.2.20.138",
+                "ipmi_terminal_port": 20138
+            },
+            "ports": []
+        }
+    ]
+}
