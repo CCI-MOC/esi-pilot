@@ -30,4 +30,5 @@ WORKDIR /
 USER neutron
 
 RUN ansible-galaxy collection install dellemc.os9
+RUN ansible-galaxy collection install nvidia.nvue
 RUN ansible-galaxy collection install community.network
