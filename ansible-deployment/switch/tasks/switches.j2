@@ -217,7 +217,7 @@ ansible_connection=local
 stp_edge=True
 [ansible:MOC-R4PCC02-SW-TORS]
 ansible_connection=ansible.netcommon.network_cli
-ansible_network_os=dellemc.os9.os9
+ansible_network_os=cumulus_nvue
 ansible_host=10.2.19.1
 ansible_user=esi
 ansible_ssh_pass={{ ansible_sw_moc_ssh_password }}
@@ -227,7 +227,7 @@ ansible_connection=local
 stp_edge=True
 [ansible:MOC-R4PCC04-SW-TORS]
 ansible_connection=ansible.netcommon.network_cli
-ansible_network_os=dellemc.os9.os9
+ansible_network_os=cumulus_nvue
 ansible_host=10.2.20.1
 ansible_user=esi
 ansible_ssh_pass={{ ansible_sw_moc_ssh_password }}
