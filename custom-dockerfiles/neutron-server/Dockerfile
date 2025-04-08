@@ -24,10 +24,12 @@ RUN cd /tmp && \
 
 RUN cd /etc/ansible && \
         \cp ansible.cfg ansible.cfg.bak && \
-        sed -i 's/#command_timeout = 30/command_timeout = 300/g' ansible.cfg
+        sed -i 's/#command_timeout = 30/command_timeout = 300/g' ansible.cfg && \
+        sed -i 's/#host_key_checking = False/host_key_checking = False/g' ansible.cfg
 
 WORKDIR /
 USER neutron
 
 RUN ansible-galaxy collection install dellemc.os9
+RUN ansible-galaxy collection install nvidia.nvue
 RUN ansible-galaxy collection install community.network

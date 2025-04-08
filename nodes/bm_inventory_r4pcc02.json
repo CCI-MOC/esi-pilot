@@ -15,7 +15,44 @@
                 "ipmi_address": "10.2.19.103",
                 "ipmi_terminal_port": 19103
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C0:A0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp24s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:A4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp24s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:A8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp48s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:AC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp48s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U04",
@@ -32,7 +69,44 @@
                 "ipmi_address": "10.2.19.104",
                 "ipmi_terminal_port": 19104
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C2:B0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp23s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C2:B4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp23s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C2:B8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp47s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C2:BC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp47s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U05",
@@ -49,7 +123,44 @@
                 "ipmi_address": "10.2.19.105",
                 "ipmi_terminal_port": 19105
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C4:C0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp22s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:C4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp22s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:C8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp46s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:CC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp46s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U06",
@@ -66,12 +177,52 @@
                 "ipmi_address": "10.2.19.106",
                 "ipmi_terminal_port": 19106
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BD:40",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp21s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BD:44",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp21s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BD:48",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp45s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BD:4C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp45s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U09",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234194b9bd"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -83,12 +234,52 @@
                 "ipmi_address": "10.2.19.109",
                 "ipmi_terminal_port": 19109
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C4:90",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp20s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:94",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp20s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:98",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp44s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:9C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp44s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U10",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a0752341756c73"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -100,12 +291,52 @@
                 "ipmi_address": "10.2.19.110",
                 "ipmi_terminal_port": 19110
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BD:80",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp19s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BD:84",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp19s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BD:88",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp43s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BD:8C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp43s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U11",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234194ac49"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -117,12 +348,52 @@
                 "ipmi_address": "10.2.19.111",
                 "ipmi_terminal_port": 19111
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C5:40",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp18s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C5:44",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp18s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C5:48",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp42s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C5:4C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp42s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U12",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a0752341a67f93"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -134,12 +405,52 @@
                 "ipmi_address": "10.2.19.112",
                 "ipmi_terminal_port": 19112
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BC:D0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp17s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:D4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp17s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:D8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp41s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:DC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp41s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U15",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a0752341a8a42a"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -151,12 +462,52 @@
                 "ipmi_address": "10.2.19.115",
                 "ipmi_terminal_port": 19115
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C2:D0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp16s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C2:D4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp16s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C2:D8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp40s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C2:DC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp40s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U16",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234194b866"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -168,12 +519,52 @@
                 "ipmi_address": "10.2.19.116",
                 "ipmi_terminal_port": 19116
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C0:D0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp15s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:D4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp15s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:D8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp39s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:DC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp39s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U17",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a0752341756a8b"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -185,12 +576,52 @@
                 "ipmi_address": "10.2.19.117",
                 "ipmi_terminal_port": 19117
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BC:E0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp14s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:E4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp14s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:E8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp38s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:EC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp38s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U18",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a0752341a68042"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -202,12 +633,52 @@
                 "ipmi_address": "10.2.19.118",
                 "ipmi_terminal_port": 19118
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C6:F0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp13s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C6:F4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp13s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C6:F8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp37s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C6:FC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp37s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U23",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234174c09e"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -219,12 +690,52 @@
                 "ipmi_address": "10.2.19.123",
                 "ipmi_terminal_port": 19123
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BF:20",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp12s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BF:24",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp12s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BF:28",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp36s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BF:2C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp36s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U24",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234174b069"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -236,12 +747,52 @@
                 "ipmi_address": "10.2.19.124",
                 "ipmi_terminal_port": 19124
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BE:20",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp11s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BE:24",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp11s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BE:28",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp35s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BE:2C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp35s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U25",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234174bf64"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -253,12 +804,52 @@
                 "ipmi_address": "10.2.19.125",
                 "ipmi_terminal_port": 19125
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BB:D0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp10s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BB:D4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp10s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BB:D8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp34s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BB:DC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp34s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U26",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234191ba2c"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -270,12 +861,52 @@
                 "ipmi_address": "10.2.19.126",
                 "ipmi_terminal_port": 19126
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:BC:60",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp9s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:64",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp9s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:68",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp33s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:BC:6C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp33s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U29",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234194c56a"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -287,12 +918,52 @@
                 "ipmi_address": "10.2.19.129",
                 "ipmi_terminal_port": 19129
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C4:80",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp8s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:84",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp8s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:88",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp32s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:8C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp32s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U30",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234194c583"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -304,12 +975,52 @@
                 "ipmi_address": "10.2.19.130",
                 "ipmi_terminal_port": 19130
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C0:80",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp7s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:84",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp7s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:88",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp31s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C0:8C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp31s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U31",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234174bf45"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -321,7 +1032,44 @@
                 "ipmi_address": "10.2.19.131",
                 "ipmi_terminal_port": 19131
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C4:50",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp6s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:54",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp6s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:58",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp30s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:5C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp30s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U32",
@@ -338,7 +1086,44 @@
                 "ipmi_address": "10.2.19.132",
                 "ipmi_terminal_port": 19132
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C5:60",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp5s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C5:64",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp5s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C5:68",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp29s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C5:6C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp29s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U35",
@@ -355,7 +1140,44 @@
                 "ipmi_address": "10.2.19.135",
                 "ipmi_terminal_port": 19135
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C1:F0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp4s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C1:F4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp4s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C1:F8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp28s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C1:FC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp28s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U36",
@@ -372,7 +1194,44 @@
                 "ipmi_address": "10.2.19.136",
                 "ipmi_terminal_port": 19136
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C4:F0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp3s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:F4",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp3s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:F8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp27s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:FC",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp27s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U37",
@@ -389,7 +1248,44 @@
                 "ipmi_address": "10.2.19.137",
                 "ipmi_terminal_port": 19137
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C3:60",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp2s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C3:64",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp2s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C3:68",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp26s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C3:6C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp26s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         },
         {
             "name": "MOC-R4PCC02U38",
@@ -406,7 +1302,44 @@
                 "ipmi_address": "10.2.19.138",
                 "ipmi_terminal_port": 19138
             },
-            "ports": []
+            "ports": [
+                {
+                    "address": "A0:88:C2:27:C4:70",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp1s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:74",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp1s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:78",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp25s0",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                },
+                {
+                    "address": "A0:88:C2:27:C4:7C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-TORS",
+                        "port_id": "swp25s1",
+                        "switch_id": "b0:cf:0e:c2:99:ff"
+                    }
+                }
+            ]
         }
     ]
 }
