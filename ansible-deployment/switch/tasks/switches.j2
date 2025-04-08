@@ -215,3 +215,19 @@ mac=54:bf:64:aa:86:c2
 manage_vlans=True
 ansible_connection=local
 stp_edge=True
+[ansible:MOC-R4PCC02-SW-TORS]
+ansible_network_os=cumulus_nvue
+ansible_host=10.2.19.1
+ansible_user=esi
+ansible_ssh_pass={{ ansible_sw_moc_ssh_password }}
+mac=b0:cf:0e:c2:99:ff
+manage_vlans=True
+stp_edge=True
+[ansible:MOC-R4PCC04-SW-TORS]
+ansible_network_os=cumulus_nvue
+ansible_host=10.2.20.1
+ansible_user=esi
+ansible_ssh_pass={{ ansible_sw_moc_ssh_password }}
+mac=b0:cf:0e:c2:93:ff
+manage_vlans=True
+stp_edge=True
