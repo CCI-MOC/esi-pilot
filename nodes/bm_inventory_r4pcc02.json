@@ -1074,7 +1074,10 @@
         {
             "name": "MOC-R4PCC02U32",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a0752341a688d8"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
@@ -1182,7 +1185,10 @@
         {
             "name": "MOC-R4PCC02U36",
             "properties": {
-                "capabilities": "boot_mode:uefi,iscsi_boot:True"
+                "capabilities": "boot_mode:uefi,iscsi_boot:True",
+                "root_device": {
+                    "wwn": "eui.000000000000000100a075234194ac15"
+                }
             },
             "resource_class": "lenovo-sd665nv3-h100",
             "driver": "ipmi",
