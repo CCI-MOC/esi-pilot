@@ -8,3 +8,6 @@ openstack subnet create \
           --ip-version 4 \
           --no-dhcp \
           subnet-nerc-infra-routed
+
+# Unity 300 internal network
+openstack network create --provider-network-type vlan --provider-segment 300 --provider-physical-network datacentre --project unity unity-internal
