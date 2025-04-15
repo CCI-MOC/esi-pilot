@@ -11,3 +11,6 @@ openstack subnet create \
 
 # Unity 300 internal network
 openstack network create --provider-network-type vlan --provider-segment 300 --provider-physical-network datacentre --project unity unity-internal
+
+# IBMScale Highspeed network 2304
+openstack network create --provider-network-type vlan --provider-segment 2304 --provider-physical-network datacentre --project ibmscale ibmscale-highspeed
