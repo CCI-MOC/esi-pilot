@@ -17,6 +17,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:94:96:3C",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp6s3",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C0:A0",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -70,6 +79,15 @@
                 "ipmi_terminal_port": 19104
             },
             "ports": [
+                {
+                    "address": "38:7C:76:C3:53:86",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp6s2",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:C2:B0",
                     "physical_network": "datacentre",
@@ -125,6 +143,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:C3:52:28",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp6s1",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C4:C0",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -178,6 +205,15 @@
                 "ipmi_terminal_port": 19106
             },
             "ports": [
+                {
+                    "address": "8C:3B:4A:3A:04:A0",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp6s0",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:BD:40",
                     "physical_network": "datacentre",
@@ -236,6 +272,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:C3:50:DF",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp5s3",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C4:90",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -292,6 +337,15 @@
                 "ipmi_terminal_port": 19110
             },
             "ports": [
+                {
+                    "address": "38:7C:76:94:96:D6",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp5s2",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:BD:80",
                     "physical_network": "datacentre",
@@ -350,6 +404,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:7C:97:F9",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp5s1",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C5:40",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -406,6 +469,15 @@
                 "ipmi_terminal_port": 19112
             },
             "ports": [
+                {
+                    "address": "38:7C:76:94:97:D2",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp5s0",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:BC:D0",
                     "physical_network": "datacentre",
@@ -464,6 +536,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:94:97:A8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp4s3",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C2:D0",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -520,6 +601,15 @@
                 "ipmi_terminal_port": 19116
             },
             "ports": [
+                {
+                    "address": "38:7C:76:C3:51:10",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp4s2",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:C0:D0",
                     "physical_network": "datacentre",
@@ -578,6 +668,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:7C:A7:49",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp4s1",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:BC:E0",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -634,6 +733,15 @@
                 "ipmi_terminal_port": 19118
             },
             "ports": [
+                {
+                    "address": "38:7C:76:94:94:59",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp4s0",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:C6:F0",
                     "physical_network": "datacentre",
@@ -692,6 +800,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:7C:92:B2",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp3s3",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:BF:20",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -749,6 +866,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:94:6B:7F",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp3s2",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:BE:20",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -805,6 +931,15 @@
                 "ipmi_terminal_port": 19125
             },
             "ports": [
+                {
+                    "address": "38:7C:76:7C:96:47",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp3s1",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:BB:D0",
                     "physical_network": "datacentre",
@@ -920,6 +1055,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:C3:52:F3",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp2s3",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C4:80",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -976,6 +1120,15 @@
                 "ipmi_terminal_port": 19130
             },
             "ports": [
+                {
+                    "address": "38:7C:76:C3:53:A9",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp2s2",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:C0:80",
                     "physical_network": "datacentre",
@@ -1034,6 +1187,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:C3:52:D7",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp2s1",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C4:50",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -1091,6 +1253,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:94:9E:15",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp2s0",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C5:60",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -1144,6 +1315,15 @@
                 "ipmi_terminal_port": 19135
             },
             "ports": [
+                {
+                    "address": "38:7C:76:C3:53:1D",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp1s3",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:C1:F0",
                     "physical_network": "datacentre",
@@ -1202,6 +1382,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:C3:51:33",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp1s2",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C4:F0",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -1256,6 +1445,15 @@
             },
             "ports": [
                 {
+                    "address": "38:7C:76:94:9D:C8",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp1s1",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
+                {
                     "address": "A0:88:C2:27:C3:60",
                     "physical_network": "datacentre",
                     "local_link_connection": {
@@ -1309,6 +1507,15 @@
                 "ipmi_terminal_port": 19138
             },
             "ports": [
+                {
+                    "address": "38:7C:76:94:97:38",
+                    "physical_network": "datacentre",
+                    "local_link_connection": {
+                        "switch_info": "MOC-R4PCC02-SW-BORS",
+                        "port_id": "swp1s0",
+                        "switch_id": "b0:cf:0e:17:bb:fd"
+                    }
+                },
                 {
                     "address": "A0:88:C2:27:C4:70",
                     "physical_network": "datacentre",
