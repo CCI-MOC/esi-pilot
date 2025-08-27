@@ -43,8 +43,11 @@ openstack subnet create \
           --network nese-storage \
           --subnet-range 10.0.120.0/22  \
           --ip-version 4 \
-          --no-dhcp \
-          subnet-nese-storage
+          --allocation-pool start=10.0.121.0,end=10.0.123.254 \
+          --host-route destination=10.255.116.0/23,gateway=10.0.120.1 \
+          --host-route destination=10.247.236.0/25,gateway=10.0.120.1 \
+          --host-route destination=140.247.236.0/25,gateway=10.0.120.1 \
+          --dhcp subnet-nese-storage
 
 # provisioning router
 openstack router create provisionrouter
