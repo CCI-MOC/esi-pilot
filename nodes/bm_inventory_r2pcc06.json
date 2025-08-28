@@ -21,7 +21,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/19",
+            "port_id": "twentyfivegige 1/20",
             "switch_id": "3c:2c:30:44:03:02"
           }
         },
@@ -30,7 +30,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/20",
+            "port_id": "twentyfivegige 1/19",
             "switch_id": "3c:2c:30:44:03:02"
           }
         }
@@ -57,7 +57,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/21",
+            "port_id": "twentyfivegige 1/22",
             "switch_id": "3c:2c:30:44:03:02"
           }
         },
@@ -66,7 +66,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/22",
+            "port_id": "twentyfivegige 1/21",
             "switch_id": "3c:2c:30:44:03:02"
           }
         }
@@ -93,7 +93,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/25",
+            "port_id": "twentyfivegige 1/26",
             "switch_id": "3c:2c:30:44:03:02"
           }
         },
@@ -102,7 +102,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/26",
+            "port_id": "twentyfivegige 1/25",
             "switch_id": "3c:2c:30:44:03:02"
           }
         }
@@ -129,7 +129,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/27",
+            "port_id": "twentyfivegige 1/28",
             "switch_id": "3c:2c:30:44:03:02"
           }
         },
@@ -138,7 +138,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/28",
+            "port_id": "twentyfivegige 1/27",
             "switch_id": "3c:2c:30:44:03:02"
           }
         }
@@ -165,7 +165,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/35",
+            "port_id": "twentyfivegige 1/36",
             "switch_id": "3c:2c:30:44:03:02"
           }
         },
@@ -174,7 +174,7 @@
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "NERC-R2PCC06-SW-TORS",
-            "port_id": "twentyfivegige 1/36",
+            "port_id": "twentyfivegige 1/35",
             "switch_id": "3c:2c:30:44:03:02"
           }
         }
