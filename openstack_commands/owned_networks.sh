@@ -23,3 +23,6 @@ openstack network create --provider-network-type vlan --provider-segment 2306 --
 openstack network create --provider-network-type vlan --provider-segment 2307 --provider-physical-network datacentre --project ibmscale ibmscale-tenant3
 
 openstack network create --provider-network-type vlan --provider-segment 2308 --provider-physical-network datacentre --project ibmscale ibmscale-tenant4
+
+# OBM Network 911
+openstack network create --provider-network-type vlan --provider-segment 911 --provider-physical-network datacentre --project admin moc-obm-mgmt
