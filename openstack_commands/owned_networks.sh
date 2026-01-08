@@ -26,3 +26,6 @@ openstack network create --provider-network-type vlan --provider-segment 2308 --
 
 # OBM Network 911
 openstack network create --provider-network-type vlan --provider-segment 911 --provider-physical-network datacentre --project admin moc-obm-mgmt
+
+# Dev Switch Network 
+openstack network create --provider-network-type vlan --provider-segment 914 --provider-physical-network datacentre --project admin moc-dev-net
