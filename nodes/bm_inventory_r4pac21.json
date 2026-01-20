@@ -773,7 +773,7 @@
       },
       "ports": [
         {
-          "address": "DC:F4:01:8B:7B:D5",
+          "address": "E0:D8:48:E4:63:E9",
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC21-SW-TORS-A",
@@ -782,7 +782,7 @@
           }
         },
         {
-          "address": "DC:F4:01:8B:7B:D8",
+          "address": "E0:D8:48:E4:63:EC",
           "physical_network": "datacentre",
           "local_link_connection": {
             "switch_info": "MOC-R4PAC21-SW-TORS-B",
